@@ -23,6 +23,14 @@ Or install it yourself as:
 
     $ gem install ability_engine
 
+## Requirements
+
+AbilityEngine expects a current_ability object to be available
+in your applications controller scope. This is provided by
+cancan's Ability class that defines all the abilities that
+a particular user might have. Refer to cancan's documentation
+for information on how to set this up.
+
 ## Usage
 
 After you've installed ability_engine to your project you need
