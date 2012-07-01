@@ -1,4 +1,4 @@
-require "ability-engine/version"
+require "ability_engine/version"
 
 module AbilityEngine
   class Engine < Rails::Engine

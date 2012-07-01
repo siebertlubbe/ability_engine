@@ -11,7 +11,13 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.name          = "ability-engine"
+  gem.name          = "ability_engine"
   gem.require_paths = ["lib"]
   gem.version       = AbilityEngine::VERSION
+
+  gem.add_development_dependency "rspec"
+  gem.add_development_dependency "rspec-rails"
+  gem.add_dependency "devise", ">= 1.5.3"
+  gem.add_dependency "railties", ">= 3.0.0"
 end
+
