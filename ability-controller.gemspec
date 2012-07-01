@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/ability-engine/version', __FILE__)
+require File.expand_path('../lib/ability_engine/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Siebert Lubbe"]
