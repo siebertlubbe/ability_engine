@@ -1,0 +1,14 @@
+#agent-banner
+  .logo= image_tag('/auth/images/admin-mode-logo.png')
+  #client-controls
+    %ul
+      - if cp_user_signed_in?
+        %li.username
+          = current_cp_user.first_name
+          = current_cp_user.last_name
+
+      %li.action-point
+        = link_to "Contact", "http://www.realestate.com.au/contact-us", :target => "_blank"
+      - if cp_user_signed_in?
+        %li.action-point
+          = link_to "Logout", destroy_cp_user_session_path

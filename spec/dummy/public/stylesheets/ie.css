@@ -1,0 +1,122 @@
+/* line 3, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+.divider-line {
+  margin: 0px !important;
+}
+
+/* line 8, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+form fieldset div.description {
+  left: 0px !important;
+}
+/* line 11, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+form fieldset.image {
+  display: block;
+  padding-bottom: 9px;
+}
+
+/* line 17, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+#progress-tracker ul li a span {
+  top: -1px;
+}
+
+/* line 21, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+.pagination .side.right {
+  top: 0px !important;
+}
+
+/* line 25, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+#property-live-email-sample, #campaign-performance-email-sample, #video-request-dialog {
+  position: relative;
+  border: 0;
+  padding: .5em 1em;
+  background: white;
+  overflow-y: scroll;
+  /*-ms-overflow-x: hidden;*/
+  zoom: 1;
+}
+
+/* line 36, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+.ui-dialog .ui-dialog-content {
+  overflow-y: hidden;
+}
+
+/* line 40, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+#property-live-email-sample, #campaign-performance-email-sample, #video-request-dialog {
+  position: relative;
+  border: 0;
+  padding: .5em 1em;
+  background: white;
+  overflow-y: scroll;
+  zoom: 1;
+}
+
+/* line 49, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+.photo-wrap a {
+  background: url("/images/edit-pen-icon.png") no-repeat scroll right white;
+}
+
+/* line 53, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+.image-index {
+  float: left;
+}
+
+/* line 57, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+.listing-image {
+  display: none;
+}
+
+/* line 61, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+#listing-products table tr .product-type {
+  padding-top: 6px;
+}
+
+/* line 65, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+.box {
+  padding-bottom: 10px;
+}
+
+/* line 70, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+#payment-confirmation .clear {
+  clear: both;
+  height: 1px;
+}
+
+/* market reports */
+/* line 78, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+.edit-refinements-outer-box.ui-dialog .box {
+  margin-top: 30px;
+}
+
+/* line 85, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+.timeline-chart-title {
+  margin-top: 2px;
+  display: inline;
+  zoom: 1;
+}
+/* line 90, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+.timeline-chart-title .chart_title {
+  display: inline;
+  zoom: 1;
+}
+/* line 95, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+.timeline-chart-title .describe-span {
+  margin-top: -17px;
+  float: right;
+  display: inline;
+  zoom: 1;
+}
+
+/* International sites navigation on the page header */
+/* line 104, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+ul#internationalSites {
+  margin-left: -6px;
+}
+
+/* line 105, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+ul#internationalSites li.france a {
+  background-position: 0 -62px;
+}
+
+/* line 106, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/ie.scss */
+ul#internationalSites li.germany a {
+  background-position: 0 -76px;
+}

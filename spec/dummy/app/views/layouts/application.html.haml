@@ -1,0 +1,22 @@
+!!! 5
+%html
+  %head
+    %title Agent Administration - realestate.com.au
+    != stylesheet_link_tag "auth"
+    /[if IE ]
+      = stylesheet_link_tag 'auth_ie'
+    /[if gt IE 7]
+      = stylesheet_link_tag 'auth_ie8'
+    != javascript_include_tag "application"
+    != csrf_meta_tags
+  %body
+    = render :partial => "layouts/common/agent_banner"
+    #wrapper
+      #container
+        #left-col
+        #right-col
+          = yield
+        .clear
+      = render :partial => "layouts/common/footer"
+
+    = yield :scripts

@@ -1,0 +1,18 @@
+!!! 5
+%html
+  %head
+    %title Login Agent Administration - realestate.com.au
+    != stylesheet_link_tag "auth_login"
+    /[if IE ]
+      = stylesheet_link_tag 'auth_login_ie'
+    /[if gt IE 7]
+      = stylesheet_link_tag 'auth_login_ie8'
+    != javascript_include_tag "application"
+    != csrf_meta_tags
+  %body
+    = render :partial => "layouts/common/login_banner"
+    #wrapper
+      = yield
+    = render :partial => "layouts/common/login_footer"
+
+    = yield :scripts

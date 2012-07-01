@@ -1,0 +1,131 @@
+/*
+ * jQuery UI Dialog 1.8.12
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Dialog#theming
+ */
+/* line 13, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog {
+  position: absolute;
+  padding: 6px;
+  width: 300px;
+  overflow: hidden;
+}
+
+/* line 14, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog .ui-dialog-titlebar {
+  padding: 6px 11px;
+}
+
+/* line 15, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog .ui-dialog-title {
+  float: left;
+  margin: .1em 16px .1em 0;
+}
+
+/* line 16, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog .ui-dialog-titlebar-close {
+  position: absolute;
+  right: .3em;
+  top: 50%;
+  width: 19px;
+  margin: -10px 0 0 0;
+  padding: 1px;
+  height: 18px;
+}
+
+/* line 17, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog .ui-dialog-titlebar-close span {
+  display: block;
+  margin: 1px;
+}
+
+/* line 18, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
+  padding: 0;
+}
+
+/* line 19, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog .ui-dialog-content {
+  position: relative;
+  border: 0;
+  padding: .5em 1em;
+  background: none;
+  overflow: auto;
+  zoom: 1;
+}
+
+/* line 20, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog .ui-dialog-buttonpane {
+  text-align: left;
+  border-width: 1px 0 0 0;
+  background-image: none;
+  margin: .5em 0 0 0;
+  padding: .3em 1em .5em .4em;
+}
+
+/* line 21, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  float: right;
+}
+
+/* line 22, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog .ui-dialog-buttonpane button {
+  margin: .5em .4em .5em 0;
+  cursor: pointer;
+}
+
+/* line 23, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog .ui-resizable-se {
+  width: 14px;
+  height: 14px;
+  right: 3px;
+  bottom: 3px;
+}
+
+/* line 24, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-widget-overlay {
+  background: #666666;
+}
+
+/* line 25, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-draggable .ui-dialog-titlebar {
+  cursor: move;
+}
+
+/* line 26, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog .ui-widget-content {
+  background-color: #FFFFFF;
+  background-image: none;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+
+/* line 33, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog .ui-widget-header {
+  background-color: #FFFFFF;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+/* line 40, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog .terms-and-conditions {
+  font-size: 10pt;
+}
+
+/* line 41, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-dialog {
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  border: 1px solid #dfdfdf;
+}
+
+/* line 48, /Users/siebert_lubbe/Programming/cp-auth/lib/assets/stylesheets/jquery/ui-lightness/jquery.ui.dialog.scss */
+.ui-widget-content {
+  background-image: url("/images/bg-frame-modal-window.png");
+  background: white;
+}

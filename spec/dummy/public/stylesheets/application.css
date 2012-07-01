@@ -1,0 +1,4702 @@
+/* normalize.css 2011-08-11T09:26 UTC · http://github.com/necolas/normalize.css */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 20, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+/* line 30, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+/* line 40, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+/* line 49, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Keeps page centred in all browsers regardless of content height
+ * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+/* line 66, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  overflow-y: scroll;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+/* line 77, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+body {
+  margin: 0;
+}
+
+/* 
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+/* line 89, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/* line 98, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+a {
+  color: #00e;
+}
+
+/* line 102, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+a:visited {
+  color: #551a8b;
+}
+
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+/* line 110, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+/* line 120, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+/* line 133, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+abbr[title] {
+  /*border-bottom: 1px dotted;*/
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3/4, S4/5, Chrome
+*/
+/* line 142, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 146, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+/* line 154, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+/* line 162, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+/* line 175, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+/* line 185, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+/* 1 */
+/* line 198, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+q {
+  quotes: none;
+}
+
+/* 2 */
+/* line 205, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 210, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+small {
+  font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+/* line 220, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 227, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 231, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/* line 241, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 246, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 251, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+/* line 267, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9 
+ */
+/* line 276, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+/* line 289, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+/* line 302, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent margin and padding
+ */
+/* line 310, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+fieldset {
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects alignment displayed oddly in IE6/7
+ */
+/* line 320, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  *margin-left: -7px;
+  /* 2 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, F3/4, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+/* line 334, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses FF3/4 setting line-height using !important in the UA stylesheet
+ */
+/* line 346, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+button,
+input {
+  line-height: normal;
+  /* 1 */
+}
+
+/*
+ * Corrects overlap and whitespace issue for buttons and inputs in IE6/7
+ * Known issue: reintroduces inner spacing
+ */
+/* line 356, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+table button,
+table input {
+  *overflow: auto;
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Corrects inner spacing displayed oddly in IE6/7
+ */
+/* line 369, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */
+}
+
+/*
+ * Addresses box sizing set to content-box in IE8/9
+ */
+/* line 380, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+/* line 389, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Corrects inner padding displayed oddly in S5, Chrome on OSX
+ */
+/* line 400, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Corrects inner padding and border displayed oddly in FF3/4
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+/* line 410, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+/* line 420, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/* 
+ * Remove most spacing between table cells
+ */
+/* line 434, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --------- typography --------------- */
+@font-face {
+  font-family: 'SansaConSoftProSemiBold';
+  src: url("/fonts/sansaconsoftpro-semibold-webfont.eot");
+  src: url("/fonts/sansaconsoftpro-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/sansaconsoftpro-semibold-webfont.woff") format("woff"), url("/fonts/sansaconsoftpro-semibold-webfont.ttf") format("truetype"), url("/fonts/sansaconsoftpro-semibold-webfont.svg#SansaConSoftProSemiBold") format("svg");
+}
+
+/* Normal weight font for regular text, logo tagline */
+@font-face {
+  font-family: 'SansaConSoftProNormal';
+  src: url("/fonts/sansaconsoftpro-normal-webfont.eot");
+  src: url("/fonts/sansaconsoftpro-normal-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/sansaconsoftpro-normal-webfont.woff") format("woff"), url("/fonts/sansaconsoftpro-normal-webfont.ttf") format("truetype"), url("/fonts/sansaconsoftpro-normal-webfont.svg#SansaConSoftProNormal") format("svg");
+}
+
+/* Alwyn New Rounded Medium */
+@font-face {
+  font-family: 'REAMedium';
+  src: url("/fonts/rea-medium.eot?#iefix") format("embedded-opentype"), url("/fonts/rea-medium.woff") format("woff"), url("/fonts/rea-medium.ttf") format("truetype"), url("/fonts/rea-medium.svg#REAMedium") format("svg");
+}
+
+/* Using more and more REALight or REARegular instead of Sansa */
+/* line 48, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+body {
+  font-family: "Helvetica Neue", "Arial", "Clean", sans-serif;
+  font-size: 13px;
+  color: #333333;
+  line-height: 18px;
+}
+
+/* line 55, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+h1, h2, h3, h4, h5 {
+  font-family: 'SansaConSoftProSemiBold', 'Helvetica Neue', helvetica, arial, clean, sans-serif;
+  color: #454545;
+  font-weight: normal;
+  line-height: 36px;
+  margin: 0;
+}
+
+/* line 63, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+h1 {
+  font-size: 24px;
+  margin: 9px 0 0px 0;
+}
+
+/* line 68, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+h2 {
+  font-size: 18px;
+}
+
+/* line 72, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+h3 {
+  font-size: 14px;
+}
+
+/* line 76, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+h4 {
+  color: #777777;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* line 82, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+a {
+  color: #2d7eb3;
+  text-decoration: none;
+  outline: none;
+  font-size: 13px;
+}
+/* line 87, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+a:hover {
+  color: #2d7eb3;
+  text-decoration: underline;
+}
+/* line 91, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+a:visited {
+  color: #538dc2;
+}
+/* line 95, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+a.disabled:hover {
+  cursor: default;
+  text-decoration: none !important;
+}
+/* line 99, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+a.disabled:visited {
+  color: #2d7eb3;
+}
+/* line 103, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+a:focus {
+  outline: none;
+}
+
+/* line 108, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+p {
+  font-size: 13px;
+  margin: 0 0 9px 0;
+}
+
+/* line 113, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 116, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+.loud {
+  font-weight: bold;
+}
+
+/* line 120, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+.light {
+  color: #858383;
+}
+
+/* line 124, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+.large {
+  font-size: 14px;
+}
+
+/* line 128, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+.small {
+  font-size: 11px;
+}
+
+/* line 147, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+ul, li {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 152, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+.asterisk, label abbr {
+  color: #c4414d;
+  font-size: 14px;
+  border: none;
+}
+
+/* --------- layout --------------- */
+/* line 46, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+#container {
+  margin: 0 auto;
+  width: 1008px;
+  padding: 15px 0px 0px 0px;
+  background: url("/images/container-bg.png") repeat-x scroll center top transparent;
+}
+
+/* line 53, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+html {
+  background: #e3e3e3 url("/images/shell-bg-ad2.png") top center repeat-y;
+  min-width: 1008px;
+}
+
+/* line 58, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+body {
+  margin: 0;
+}
+
+/* line 62, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+#header {
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+  width: 1008px;
+  z-index: 2;
+  height: 90px;
+}
+/* line 69, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+#header ul#accessibility {
+  float: left;
+  height: 40px;
+}
+/* line 74, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+#header li.accessibilityLink {
+  display: none;
+}
+
+/* line 79, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+#left-col {
+  float: left;
+  width: 182px;
+  min-height: 500px;
+  margin: 0px 17px 0 0;
+}
+
+/* line 86, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+#right-col {
+  width: 794px;
+  float: left;
+  margin-top: 10px;
+}
+
+/* line 93, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.editing-mode-block {
+  float: left;
+  margin-top: 47px;
+  margin-left: 15px;
+  color: #8c8c8c;
+  font-size: 14px;
+  width: 330px;
+}
+/* line 100, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.editing-mode-block img {
+  float: left;
+  margin: 3px 5px 0px 0px;
+}
+/* line 104, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.editing-mode-block span {
+  font-size: 11px;
+  display: block;
+}
+
+/* line 110, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+li#rea-logo {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: 35px;
+  margin-left: 10px;
+}
+/* line 114, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+li#rea-logo a {
+  background: transparent url("/images/rea_brand.png") no-repeat scroll 0 0;
+  display: block;
+  height: 53px;
+  margin: 10px 0 20px;
+  width: 235px;
+}
+/* line 120, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+li#rea-logo a strong {
+  display: none;
+}
+
+/* line 126, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.feature {
+  background: #fbfbfb;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 132, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.footer-container {
+  color: #6f6f6f;
+  zoom: 1;
+  margin: 0 auto;
+  padding-top: 0px;
+  width: 1008px;
+  text-align: left;
+}
+/* line 6, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.footer-container:before, .footer-container:after {
+  display: table;
+  content: "";
+}
+/* line 10, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.footer-container:after {
+  clear: both;
+}
+/* line 139, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.footer-container .footer {
+  border-top: 1px solid #e3e3e3;
+  margin-top: 64px;
+  margin-left: 180px;
+  height: 40px;
+  padding: 0 0 0 24px;
+  text-align: left;
+  font-size: 11px;
+}
+/* line 147, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.footer-container .footer .footer-left {
+  float: left;
+  padding: 10px 0px;
+}
+/* line 151, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.footer-container .footer .footer-right {
+  float: right;
+  padding: 10px 30px;
+}
+/* line 154, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.footer-container .footer .footer-right a {
+  font-size: 11px;
+}
+/* line 157, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.footer-container .footer .footer-right .divider {
+  padding: 0 7px;
+}
+
+/* --------- general and utility styles --------------- */
+/* line 4, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.heading-line {
+  border-bottom: 1px solid #efefef;
+  clear: both;
+  height: 1px;
+  margin: 9px 0px 18px 0px;
+}
+
+/* line 11, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.no-border-right {
+  border-right: 1px solid transparent;
+}
+
+/* line 14, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.align-left {
+  text-align: left;
+}
+
+/* line 17, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.align-right {
+  text-align: right;
+}
+
+/* line 20, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.align-top {
+  vertical-align: top;
+}
+
+/* line 23, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.align-bottom {
+  vertical-align: bottom;
+}
+
+/* line 26, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.align-middle {
+  display: table-cell;
+  vertical-align: middle;
+  height: 110px;
+}
+
+/* line 31, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.normal-text {
+  color: #515151;
+}
+
+/* line 34, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.push-text-top {
+  padding-top: 15px;
+}
+
+/* line 37, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.equal {
+  background: url("/images/equal2.png") right center no-repeat;
+}
+
+/* line 40, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.ticked {
+  min-height: 24px;
+  padding-right: 40px;
+  background: url("/images/ticked2.png") right center no-repeat;
+}
+
+/* line 45, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.block {
+  display: block;
+}
+
+/* line 48, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.top-border {
+  border-top: 1px solid #e0dddb;
+}
+
+/* line 51, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.new {
+  margin-left: 10px;
+  position: relative;
+  margin-bottom: -2px;
+  z-index: 10;
+}
+
+/* line 57, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.inline1 {
+  border-width: 1px;
+  width: 700px;
+  height: 400px;
+  overflow: auto;
+}
+
+/* line 63, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.border-right {
+  border-right: 1px solid #757272;
+}
+
+/* line 66, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.even {
+  background: white;
+  border-bottom: 1px solid #e0dddb;
+  width: auto;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* line 73, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.odd {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border-bottom: 1px solid #e0dddb;
+  width: auto;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* line 79, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.odd-product {
+  background: #f7f7f0;
+  border-bottom: 1px solid #e0dddb;
+  width: auto;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* line 86, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.im-error {
+  background-color: #ce8e8e;
+}
+
+/* line 90, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.right {
+  float: right;
+}
+
+/* line 94, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.left {
+  float: left;
+}
+
+/* line 98, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.hide, .hidden {
+  display: none;
+}
+
+/* line 102, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.show {
+  display: visible;
+}
+
+/* line 106, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.clear-list {
+  clear: both;
+}
+
+/* line 110, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.clear {
+  clear: both;
+}
+
+/* line 115, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.center-aligned {
+  margin: 0px auto;
+}
+
+/* line 119, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+#types-container {
+  background: white;
+  display: none;
+  margin-left: 0;
+  padding-bottom: 9px;
+  position: absolute;
+  width: 150px;
+  z-index: 150;
+  border: 1px solid grey;
+}
+
+/* line 130, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.upgrade {
+  display: block;
+  float: right;
+  font-size: 0.79em;
+  text-align: left;
+  width: 162px;
+}
+
+/* line 138, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.divider-line {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 8px 0px 8px 0px;
+}
+
+/* line 143, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+th, td, caption {
+  padding: 4px 10px 4px 5px;
+}
+
+/* line 148, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+table {
+  width: 100%;
+}
+
+/* line 152, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+img {
+  border: 0 transparent solid;
+}
+
+/* line 156, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.focus {
+  background: #fff7c0;
+}
+
+/* line 161, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.jqEasyCounterMsg {
+  text-align: right;
+}
+
+/* line 166, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+div.links a {
+  color: #2d7eb3;
+}
+/* line 168, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+div.links a:hover {
+  text-decoration: underline;
+}
+/* line 171, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+div.links a span {
+  text-decoration: none;
+  color: #2d7eb3;
+}
+
+/* line 178, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.wait-loading {
+  top: 0px;
+  padding: 16px 45px 16px 83px;
+  border: 1px solid #FFDF65;
+  width: auto;
+  margin-left: 45%;
+  margin-top: -42px;
+  opacity: 0;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -khtml-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -khtml-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -2px 2px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -2px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -2px 2px 2px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 950;
+  background: #fdf7ce url("/images/loading.gif") 39px 20px no-repeat;
+  color: #333333;
+  font-size: 18px;
+  text-shadow: white 0 1px 1px;
+}
+
+/* line 210, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.red {
+  color: #c4414d !important;
+}
+
+/* line 214, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_general.scss */
+.green {
+  color: #c7e5d2;
+}
+
+/* line 24, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+#flash-messages {
+  clear: both;
+  margin-bottom: 9px;
+}
+
+/* line 29, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box {
+  padding: 0 1.3em;
+  margin-bottom: 1.3em;
+  border: 1px solid #e0dddb;
+}
+/* line 33, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box h3 {
+  text-shadow: white 0 0px 1px;
+  margin: 1.0em 0;
+}
+/* line 37, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box p {
+  margin: 0 20px 30px 0;
+}
+/* line 40, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.video {
+  padding-top: 40px;
+}
+/* line 43, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.successful {
+  border: 1px solid #63b982;
+  color: #216d3c;
+  background: url("/images/sq-white.gif") top repeat-x;
+  background-color: #c7e5d2;
+}
+/* line 48, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.successful h3 {
+  color: #216d3c;
+}
+/* line 49, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.successful img {
+  float: left;
+  margin: 10px;
+}
+/* line 51, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.warning {
+  border: 1px solid #b9b463;
+  color: #333333;
+  background: #fff7c0 url("/images/sq-white.gif") top repeat-x;
+}
+/* line 55, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.warning h3 {
+  color: #6f6e3f;
+  background: url("/images/icons/icon-holder-w.gif") no-repeat;
+  padding-left: 70px;
+}
+/* line 60, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.warning img {
+  float: left;
+  margin: 10px;
+}
+/* line 62, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.error {
+  border: 1px solid #ce8e8e;
+  color: #c4414d;
+  background: #f6e3e7 url("/images/sq-white.gif") top repeat-x;
+}
+/* line 10, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.error h3 {
+  color: #c4414d;
+}
+/* line 11, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.error img {
+  float: left;
+  margin: 10px;
+}
+/* line 12, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.error ul {
+  margin: 0px 0px 30px 95px;
+}
+/* line 65, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.info {
+  border: 1px solid #afc5d2;
+  color: #4f7489;
+  background: #e7f1f7 url("/images/sq-white.gif") top repeat-x;
+  padding-bottom: 30px;
+}
+/* line 70, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.info h3 {
+  color: #4f7489;
+}
+/* line 71, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.info img {
+  float: left;
+  margin: 10px;
+}
+/* line 72, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+.box.info p {
+  margin-left: 0px;
+}
+
+/* line 77, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_boxes.scss */
+#stocklist .box {
+  margin: 10px 0px 0px 0px;
+}
+
+/* --------- buttons --------------- */
+/* line 57, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button {
+  display: inline-block;
+  font-size: 13px;
+  color: white;
+  height: 37px;
+  line-height: 15px;
+  padding: 0 0 0 19px;
+  background: url("/images/btn.png") no-repeat left -82px;
+  text-decoration: none;
+  position: relative;
+}
+/* line 12, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button span {
+  display: block;
+  padding: 11px 20px 0 0;
+  height: 26px;
+  background: url("/images/btn.png") no-repeat right top;
+  cursor: pointer;
+  float: left;
+  color: white;
+  text-shadow: #838383 0 -1 1px;
+}
+/* line 22, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button:hover {
+  text-decoration: none;
+  background-position: left -123px;
+}
+/* line 25, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button:hover span {
+  background-position: right -41px;
+}
+/* line 31, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button:active {
+  text-decoration: none;
+  background-position: left -122px;
+}
+/* line 34, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button:active span {
+  padding: 12px 20px 0 0;
+  height: 25px;
+  background-position: right -40px;
+}
+/* line 40, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.disabled {
+  background-position: left -289px;
+}
+/* line 42, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.disabled:hover {
+  cursor: default;
+}
+/* line 45, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.disabled span {
+  background-position: right -207px;
+  color: #f9fbfc;
+  text-shadow: transparent, 0, 0px, 0px;
+}
+/* line 50, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.disabled span:hover {
+  cursor: default;
+}
+/* line 59, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.back, .button.cancel {
+  background-image: url("/images/back-btn.png");
+}
+/* line 61, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.back span, .button.cancel span {
+  color: #2F2F2F;
+  background-image: url("/images/back-btn.png");
+}
+/* line 66, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.delete {
+  background-image: url("/images/btn-red.png");
+}
+/* line 68, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.delete span {
+  background-image: url("/images/btn-red.png");
+}
+/* line 73, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button:focus {
+  text-decoration: none;
+  background-position: left -123px;
+}
+/* line 76, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button:focus span {
+  background-position: right -41px;
+}
+/* line 81, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.hidden {
+  display: none;
+}
+/* line 84, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.product {
+  background-image: url("/images/btn.png");
+  padding-left: 19px;
+}
+/* line 87, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.product span {
+  background-image: url("/images/btn.png");
+  padding: 11px 20px 0px 0px;
+  font-size: 1em;
+  width: 100px;
+  text-align: center;
+}
+/* line 95, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.inline {
+  background-image: url("/images/blue-btn.png");
+  padding-left: 25px;
+  margin-bottom: 0px;
+}
+/* line 99, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.inline span {
+  background-image: url("/images/blue-btn.png");
+  margin-bottom: 0;
+  padding: 10px 24px 0 0;
+  font-size: 1em;
+  height: 27px;
+  float: none;
+}
+/* line 108, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.small-blue {
+  background-image: url("/images/blue-btn.png");
+  position: absolute;
+  margin-right: 10px;
+  padding-left: 25px;
+  margin-bottom: -10px;
+}
+/* line 114, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.small-blue span {
+  white-space: nowrap;
+  background-image: url("/images/blue-btn.png");
+  padding: 10px 25px 0px 0px;
+  font-size: 1em;
+}
+/* line 121, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.stocklist-search {
+  background: transparent url("/images/stocklist-search-btn.png") no-repeat scroll right -82px;
+  color: white;
+  display: inline-block;
+  height: 42px;
+  margin-top: 2px;
+  padding: 0 18px 0 0px;
+  text-decoration: none;
+  float: left;
+  position: relative;
+}
+/* line 131, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.stocklist-search:hover, .button.stocklist-search:focus {
+  text-decoration: none;
+  background-position: right -123px;
+}
+/* line 134, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.stocklist-search:hover span, .button.stocklist-search:focus span {
+  background-position: right -41px;
+}
+/* line 138, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_buttons.scss */
+.button.stocklist-search span {
+  background: transparent url("/images/stocklist-search-btn.png") no-repeat scroll right top;
+  color: #8C8A86;
+  cursor: pointer;
+  display: block;
+  float: left;
+  /*font-size: 0.94em;*/
+  font-weight: bold;
+  height: 25px;
+  line-height: normal;
+  padding: 12px 5px 0 6px;
+  text-shadow: 0 1px 1px white;
+  font-size: 12px;
+}
+
+/* ---------- international sites amd main sites nav ------------  */
+/* line 3, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+#siteLinks {
+  font-size: 11px;
+  line-height: 20px;
+  margin: 0 -494px 0 0;
+  overflow: visible;
+  position: absolute;
+  right: 50%;
+  top: 20px;
+  width: 640px;
+  z-index: 400;
+  font-weight: bold;
+}
+/* line 14, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+#siteLinks ul {
+  float: right;
+  overflow: visible;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  margin-top: 27px;
+  margin-left: 0px;
+}
+/* line 20, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+#siteLinks ul li {
+  border-right: 1px solid #e0dddb;
+  margin-right: 5px;
+  padding-right: 10px;
+  float: left;
+}
+/* line 25, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+#siteLinks ul li a {
+  padding: 3px 0 3px 10px;
+  font-size: 11px;
+  color: #333333;
+  text-decoration: none;
+}
+/* line 30, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+#siteLinks ul li a:hover {
+  color: #c20014;
+  text-decoration: underline;
+}
+/* line 35, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+#siteLinks ul li.realestate a {
+  background-position: 0 -213px;
+}
+/* line 38, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+#siteLinks ul li.realcommercial a {
+  background-position: 0 -41px;
+}
+/* line 41, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+#siteLinks ul li.international {
+  background-color: #ffffff;
+  background-position: 10px 3px;
+  cursor: pointer;
+  line-height: 19px;
+  position: relative;
+  width: 130px;
+  z-index: 400;
+  padding-right: 0px;
+  border-right: 1px solid white;
+}
+/* line 51, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+#siteLinks ul li.international span {
+  display: block;
+  background: url("/images/external-nav-icons.png") no-repeat scroll right 2px;
+  width: 123px;
+  text-align: left;
+  margin: 0 5px 0 6px;
+}
+/* line 60, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+#siteLinks ul li.internationalActive span {
+  border-right: 1px solid #e0dddb;
+}
+
+/* line 70, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ie7
+ul#internationalSites {
+  margin-left: -6px;
+}
+
+/* line 73, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites {
+  display: none;
+  margin-top: 0px;
+  width: 134px;
+  border-left: 1px solid #e0dddb;
+  border-right: 1px solid #e0dddb;
+  border-bottom: 1px solid #e0dddb;
+}
+/* line 81, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li {
+  background: white url("/images/dashed_dotted.gif") repeat-x scroll 0 0;
+  float: none;
+  margin: 0;
+  padding: 5px 10px;
+  border-right: none;
+}
+/* line 87, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li.france {
+  background: none;
+}
+/* line 90, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li a {
+  background: url("/images/external-nav-icons.png") no-repeat scroll 0 -64px;
+  display: block;
+  font-weight: bold;
+  line-height: 14px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+/* line 98, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li a:hover {
+  color: white;
+  background-color: #999999;
+  text-decoration: none;
+}
+/* line 104, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li:hover {
+  color: white;
+  background-color: #999999;
+  text-decoration: none;
+}
+/* line 109, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li.france a {
+  background-position: 0 -64px;
+}
+/* line 112, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li.germany a {
+  background-position: 0 -78px;
+}
+/* line 115, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li.hongkong a {
+  background-position: 0 -93px;
+}
+/* line 118, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li.italy a {
+  background-position: 0 -109px;
+}
+/* line 121, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li.luxembourg a {
+  background-position: 0 -126px;
+}
+/* line 124, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li.nz a {
+  background-position: 0 -143px;
+}
+/* line 127, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li.singapore a {
+  background-position: 0 -160px;
+}
+/* line 130, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li.last {
+  background: #ffffff;
+  position: relative;
+  height: 14px;
+}
+/* line 134, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li.last:hover {
+  color: white;
+  background-color: #999999;
+  text-decoration: none;
+}
+/* line 140, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li:hover > a {
+  color: white;
+  background-color: #999999;
+  text-decoration: none;
+}
+/* line 145, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_international.scss */
+ul#internationalSites li .dotHR {
+  background: transparent url("/images/dashed_dotted.gif") repeat-x scroll 0 0;
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 135px;
+}
+
+/*-------------- form styles ---------------- */
+/* line 2, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form {
+  background-color: transparent;
+}
+/* line 4, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form#video-request {
+  margin-top: 15px;
+}
+/* line 7, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset {
+  position: relative;
+  border: none;
+  color: #333333;
+  padding: 0 0 0 0;
+  margin-bottom: 18px;
+}
+/* line 13, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset img {
+  border: none;
+}
+/* line 16, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset legend {
+  font-family: 'SansaConSoftProSemiBold', 'Helvetica Neue', helvetica, arial, clean, sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+  display: block;
+  color: #454545;
+  left: 0px !important;
+  padding: 0 0 3px 0;
+  border-bottom: 1px solid #e5e5e5;
+  width: 527px;
+}
+/* line 27, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset div.description {
+  float: right;
+  width: 220px;
+}
+/* line 30, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset div.description p {
+  padding: 0 10px 0 0;
+  color: #999999;
+}
+/* line 35, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset p {
+  padding-right: 50px;
+  font-weight: normal;
+}
+/* line 38, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset p a {
+  outline-style: none;
+  text-decoration: none;
+  color: #313134;
+}
+/* line 42, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset p a:hover {
+  text-decoration: none;
+  color: #313134;
+}
+/* line 50, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset label {
+  width: 100%;
+  padding-top: 9px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 27px;
+}
+/* line 56, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset label.supplemental {
+  font-weight: normal;
+  width: auto;
+  font-size: 14px;
+}
+/* line 61, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset label span {
+  color: #c4414d;
+}
+/* line 65, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset .error-msg {
+  font-weight: normal;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 36px;
+}
+/* line 73, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset input, form fieldset input[type="email"], form fieldset input[type="text"], form fieldset input[type="password"], form fieldset textarea {
+  color: #333;
+  top: 0px;
+  margin: 0;
+  padding: 5px;
+  font: normal 14px "Helvetica Neue", "Arial", "Clean", sans-serif;
+  color: #575757;
+}
+/* line 80, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset input:focus, form fieldset input[type="email"]:focus, form fieldset input[type="text"]:focus, form fieldset input[type="password"]:focus, form fieldset textarea:focus {
+  background-color: white;
+  outline: 0;
+}
+/* line 85, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset select {
+  font-size: 13px;
+}
+/* line 88, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset input[type="checkbox"], form fieldset input[type="radio"] {
+  top: 0px;
+  margin: 0;
+  xpadding: 5px;
+  xbackground: #fafafa;
+  xcolor: #575757;
+}
+/* line 95, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset textarea {
+  width: 340px;
+  height: auto;
+  padding: 5px;
+  border: 1px solid #bbb;
+  border-top: 1px solid #999;
+}
+/* line 101, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset textarea.video {
+  height: 120px;
+}
+/* line 105, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset input[type='text'] {
+  width: auto;
+}
+/* line 107, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset input[type='text'].fakeselect {
+  width: 350px;
+  background: white url("/images/ajax-loader.gif") no-repeat scroll right center;
+}
+/* line 111, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset input[type='text'].file {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  width: 65%;
+  margin-bottom: 4px;
+  padding: 2px;
+  border: 0px;
+  background: #fafafa;
+  font: normal 14px "Helvetica Neue", "Arial", "Clean", sans-serif;
+  color: #575757;
+}
+/* line 122, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset input[type='text'].ghosted {
+  color: #999999;
+}
+/* line 126, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset span.add {
+  display: inline-block;
+  margin-left: 40px;
+}
+/* line 130, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset span.date-selector {
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+  zoom: 1;
+}
+/* line 134, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset span.date-selector label.supplemental {
+  display: block;
+  position: relative;
+  padding: 0 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+/* line 6, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+form fieldset span.date-selector:before, form fieldset span.date-selector:after {
+  display: table;
+  content: "";
+}
+/* line 10, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+form fieldset span.date-selector:after {
+  clear: both;
+}
+/* line 144, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset .msg {
+  width: 100%;
+  padding: 0;
+}
+/* line 148, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset .feature-group {
+  zoom: 1;
+  border-bottom: 1px #e0dddb solid;
+  margin: 0 2em 1em 0;
+  padding-bottom: 1em;
+}
+/* line 6, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+form fieldset .feature-group:before, form fieldset .feature-group:after {
+  display: table;
+  content: "";
+}
+/* line 10, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+form fieldset .feature-group:after {
+  clear: both;
+}
+/* line 153, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset .feature-group div.feature-item {
+  width: 230px;
+  margin-right: 10px;
+  float: left;
+}
+/* line 159, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ul, form fieldset ol {
+  float: left;
+  padding: 0 0 0 0;
+  margin-top: 0;
+  width: 527px;
+  background-color: #f9f9f9;
+}
+/* line 166, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ul li, form fieldset ol li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  zoom: 1;
+}
+/* line 6, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+form fieldset ul li:before, form fieldset ul li:after, form fieldset ol li:before, form fieldset ol li:after {
+  display: table;
+  content: "";
+}
+/* line 10, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+form fieldset ul li:after, form fieldset ol li:after {
+  clear: both;
+}
+/* line 169, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ul li.error, form fieldset ol li.error {
+  color: #C4414D;
+  border: 0px;
+  margin: 0px;
+  background-color: #FAE5E9;
+}
+/* line 174, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ul li.error label, form fieldset ol li.error label {
+  color: #C4414D !important;
+  font-weight: bold;
+}
+/* line 179, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ul li.focus, form fieldset ol li.focus {
+  background-color: #fff7c0;
+}
+/* line 183, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ul.col, form fieldset ol.col {
+  width: 43%;
+  float: left;
+  margin: 0px 5px 0.5em 0px;
+  border: 0px;
+  background-color: transparent;
+}
+/* line 189, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ul.col li, form fieldset ol.col li {
+  width: 195px;
+  padding-left: 0px;
+  background: none;
+  padding-top: 0px;
+}
+/* line 196, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ul.wide-format, form fieldset ol.wide-format {
+  margin: 0 0 18px;
+  padding: 0;
+  width: 792px;
+}
+/* line 200, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ul.wide-format li, form fieldset ol.wide-format li {
+  padding-left: 20px;
+}
+/* line 203, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ul.wide-format .msg, form fieldset ol.wide-format .msg {
+  width: 100%;
+}
+/* line 209, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset.buttons ul {
+  background: none;
+}
+/* line 211, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset.buttons ul a.delete, form fieldset.buttons ul a.cancel {
+  float: right;
+}
+/* line 214, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset.buttons ul a.continue, form fieldset.buttons ul a.back {
+  float: left;
+}
+/* line 220, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ul li {
+  margin: 0px;
+  padding: 7px 0 11px 20px;
+}
+/* line 223, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ul li:first-child {
+  padding-top: 9px;
+  border-top: 1px solid #fff;
+}
+/* line 230, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ol li {
+  margin: 0;
+  padding: 7px 0 11px 20px;
+  overflow: visible;
+  list-style-type: none;
+  xdisplay: list-item;
+  xvertical-align: top;
+}
+/* line 256, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ol li.focus {
+  background-color: transparent;
+}
+/* line 260, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset ol li > * {
+  color: #333333;
+}
+/* line 265, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset.wide {
+  border: none;
+  background: none;
+  margin: 0 0 18px;
+  padding: 0 0 0 0;
+}
+/* line 271, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset.wide legend {
+  display: block;
+  width: 792px;
+}
+/* line 274, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset.wide legend span {
+  display: block;
+  float: none;
+  background-image: none;
+  border: 0;
+}
+/* line 281, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+form fieldset.wide div.description {
+  display: block;
+  width: auto;
+  float: none;
+  margin: 0 0 36px 10px;
+}
+
+/* line 290, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.drop-area-bk {
+  background: #faf9f8 url("/images/droparea-bk.png") top left no-repeat;
+  background-position: 0px 25px;
+  width: 740px;
+}
+
+/* line 295, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.tooltip {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 30px;
+  text-decoration: none;
+  display: inline;
+  margin: 0 0 0 10px;
+  position: absolute;
+  cursor: help;
+}
+/* line 147, /Users/siebert_lubbe/.rvm/gems/ree-1.8.7-2011.03@cp-auth/gems/compass-0.11.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .tooltip {
+  overflow-x: hidden;
+}
+/* line 302, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.tooltip a {
+  background: url("/images/tooltip.png") no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+/* line 309, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.hint {
+  font-size: 11px !important;
+  line-height: 18px !important;
+  display: none;
+  position: absolute;
+  width: 200px;
+  z-index: 200;
+  -moz-box-shadow: 0px 2px 5px #dddddd;
+  -webkit-box-shadow: 0px 2px 5px #dddddd;
+  -o-box-shadow: 0px 2px 5px #dddddd;
+  box-shadow: 0px 2px 5px #dddddd;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #e2e3c8;
+  background: #fffee0 url("/images/pointer.gif") no-repeat scroll -100px -100px;
+  margin: -35px 0px 0px 20px;
+  padding: 10px 12px;
+}
+/* line 322, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.hint .hint-pointer, .hint .pointer {
+  background: transparent url("/images/pointer.gif") no-repeat scroll left top;
+  position: absolute;
+  height: 19px;
+  left: -10px;
+  top: 5px;
+  width: 10px;
+}
+
+/* line 331, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.error .hint, .successful .hint {
+  margin: 0px 0px 0px 30px;
+  color: #333333;
+}
+
+/* line 335, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.none {
+  display: none;
+}
+
+/* line 338, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.display {
+  display: block;
+}
+
+/* line 341, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.selectoptions {
+  width: 360px;
+  border: 1px solid #666666;
+  border-top: 1px solid #edeef0;
+  font: normal 14px "Helvetica Neue", "Arial", "Clean", sans-serif;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  -o-border-top-left-radius: 0;
+  -ms-border-top-left-radius: 0;
+  -khtml-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  -o-border-top-right-radius: 0;
+  -ms-border-top-right-radius: 0;
+  -khtml-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  margin: -3px 0px 0px 0px;
+  padding: 0px;
+  background: white;
+  position: absolute;
+  color: #575757;
+  z-index: 10;
+}
+/* line 355, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.selectoptions ul {
+  padding: 0px;
+  margin: 0px;
+  width: 358px;
+  background: white;
+}
+/* line 360, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.selectoptions ul li {
+  width: 100%;
+  display: block;
+  padding: 0px 0px 0px 0px;
+  background: white;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 366, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.selectoptions ul li:first-child {
+  margin-top: 5px;
+}
+/* line 369, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.selectoptions ul li:last-child {
+  margin-bottom: 5px;
+}
+/* line 372, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.selectoptions ul li a {
+  display: block;
+  padding: 6px 0 6px 10px;
+  margin-left: 0px;
+  color: #333333;
+  text-decoration: none;
+}
+/* line 378, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.selectoptions ul li a:hover {
+  background: #edeef0;
+}
+
+/* line 385, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.hr-short {
+  height: 2px;
+  background: url("/images/hr-bg2.png") repeat-x bottom center;
+  margin: 0px 0px 0px 0px;
+  clear: both;
+}
+/* line 390, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.hr-short hr {
+  display: none;
+}
+
+/* line 394, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.hr-full {
+  display: none;
+}
+
+/* line 398, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.form-division {
+  background: transparent url("/images/fliedset-bg-top-wide.png") no-repeat scroll left top;
+  width: 793px;
+  height: 20px;
+}
+
+/* line 404, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+input.ui-autocomplete-input {
+  border: 1px solid #bbb;
+  padding: 7px !important;
+}
+
+/* line 412, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+#suburb-autocomplete ul.ui-autocomplete {
+  margin-top: 0px;
+  border: 1px solid #bbb;
+  border-top: none;
+  font-size: 12px;
+  font-family: "Helvetica Neue", "Arial", "Clean", sans-serif;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  -o-border-top-left-radius: 0;
+  -ms-border-top-left-radius: 0;
+  -khtml-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  -o-border-top-right-radius: 0;
+  -ms-border-top-right-radius: 0;
+  -khtml-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0 0px 0px 0px;
+  padding: 0px;
+  background: white;
+  color: #121212;
+}
+/* line 444, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+#suburb-autocomplete a.ui-state-hover {
+  border: none;
+  color: inherit;
+  background: #dfecf8;
+}
+/* line 451, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+#suburb-autocomplete a {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  margin-left: 0px;
+  display: block;
+  color: #515151;
+  text-decoration: none;
+  margin: 0px;
+}
+/* line 463, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+#suburb-autocomplete li:first-child {
+  margin-top: 5px;
+}
+/* line 468, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+#suburb-autocomplete li:last-child {
+  margin-bottom: 5px;
+}
+
+/* line 474, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.ui-autocomplete-loading {
+  background: #fafafa url("/images/ajax-loader.gif") right no-repeat;
+}
+
+/* line 479, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.qq-upload-spinner {
+  background: #fafafa url("/images/ajax-loader.gif") center no-repeat;
+}
+
+/* line 484, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.qq-upload-cancel {
+  float: right;
+}
+
+/* line 489, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.qq-upload-button-focus {
+  display: block;
+}
+
+/* line 494, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.broken-image-icon {
+  position: absolute;
+  left: 42px;
+  top: 37px;
+}
+
+/* line 501, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.ui-autocomplete-display {
+  xborder-radius: 5px 5px 0 0 !important;
+  xborder: 1px solid #666666 !important;
+  border-bottom: 1px dashed #ddd !important;
+}
+
+/* line 508, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+#terms-and-conditions-toggle-container .long-field {
+  float: left;
+  width: 29px;
+}
+/* line 513, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+#terms-and-conditions-toggle-container .long-field-description {
+  float: left;
+  width: 456px;
+}
+/* line 517, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+#terms-and-conditions-toggle-container p {
+  margin-left: 29px;
+}
+
+/* line 523, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+.social-share-ofi {
+  zoom: 1;
+}
+/* line 6, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.social-share-ofi:before, .social-share-ofi:after {
+  display: table;
+  content: "";
+}
+/* line 10, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.social-share-ofi:after {
+  clear: both;
+}
+
+/* line 527, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+#property-principal-address-hide-street-view-toggle-container {
+  padding-top: 0;
+}
+
+/* line 531, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+#property-principal-address-hide-address-toggle-container {
+  padding-bottom: 0;
+}
+
+/* line 536, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_forms.scss */
+#delete-draft-listing-popup h2 {
+  margin-bottom: 16px;
+}
+
+/* line 1, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image {
+  zoom: 1;
+  width: 792px;
+  background: #f9f9f9;
+}
+/* line 6, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+fieldset.wide.image:before, fieldset.wide.image:after {
+  display: table;
+  content: "";
+}
+/* line 10, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+fieldset.wide.image:after {
+  clear: both;
+}
+/* line 5, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image legend {
+  background-color: #fff;
+  width: 100%;
+}
+/* line 9, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image .description {
+  margin: 0 0 0 10px;
+  padding-top: 10px;
+}
+/* line 13, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image label {
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0px 0px 0px 10px;
+  text-align: left;
+}
+/* line 19, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image img {
+  border: none;
+  margin: 3px 0px 0px 3px;
+}
+/* line 24, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image .listing-image {
+  margin: 4px 4px;
+  width: 94px;
+  height: 70px;
+  background-size: 94px 70px;
+}
+/* line 30, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul {
+  overflow: auto;
+  width: 735px;
+  border: 0;
+  margin: 0;
+  padding: 21px 0 18px 21px;
+  background: transparent url("/images/droparea-bk2.png") no-repeat scroll 6px 3px;
+}
+/* line 38, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li.loading .qq-upload-cancel {
+  display: block;
+}
+/* line 42, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li.loading:hover .delete-image {
+  display: none;
+}
+/* line 47, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0px;
+  height: 98px;
+  width: 102px;
+  margin: 0px 14px 20px 0px;
+  background: white;
+  float: left;
+  border: 1px solid #c9c9c8;
+}
+/* line 56, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li .number {
+  background: url("/images/drag_icon-small_03.png") no-repeat -1px -2px;
+  width: 15px;
+  display: block;
+  text-indent: -40px;
+  position: absolute;
+  z-index: 10;
+}
+/* line 59, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li img {
+  opacity: 1;
+}
+/* line 62, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li a {
+  visibility: visible;
+  color: #5484B2;
+  text-decoration: underline;
+}
+/* line 66, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li a:hover {
+  text-decoration: underline !important;
+}
+/* line 71, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li:hover {
+  top: -2px;
+  cursor: move;
+  background: white;
+  border: 1px solid #c5c6c6;
+  -moz-box-shadow: 0px 4px 6px #888;
+  -webkit-box-shadow: 0px 4px 6px #888;
+  box-shadow: 0px 4px 6px #888;
+}
+/* line 79, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li:hover .delete-image {
+  display: inline;
+  text-decoration: none;
+  color: #C4414D;
+  font-size: 11px;
+}
+/* line 85, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li:hover .image-index {
+  background: url("/images/drag_icon-small_03.png") no-repeat -1px -2px;
+  width: 15px;
+  display: block;
+  text-indent: -9999px;
+  position: absolute;
+  z-index: 10;
+}
+/* line 94, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li.add-image {
+  text-align: center;
+  display: block;
+  border: 2px dashed #dddbdb;
+  height: 88px;
+  background: transparent;
+}
+/* line 101, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li.add-image.focus {
+  border-color: #5484B2;
+}
+/* line 104, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li.add-image .qq-uploader, fieldset.wide.image ul li.add-image .qq-upload-button {
+  position: relative;
+  width: 100%;
+  height: 88px;
+  display: inline-block;
+}
+/* line 110, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li.add-image:hover {
+  cursor: pointer;
+  background: transparent;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 117, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li.add-image a {
+  text-decoration: none !important;
+}
+/* line 119, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li.add-image a > span {
+  display: block;
+  position: relative;
+  top: 20px;
+}
+/* line 123, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li.add-image a > span span {
+  text-decoration: underline;
+}
+/* line 129, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li .im-text {
+  font-size: 11px;
+  color: #515151;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: block;
+}
+/* line 136, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li .im-overlay {
+  float: left;
+  z-index: 10;
+  font-size: 11px;
+  margin: 3px;
+  display: block;
+  position: relative;
+  padding: 0px;
+  width: 93px;
+  height: 68px;
+  background: url("/images/ajax-loader-3.gif") no-repeat scroll 0px -19px;
+}
+/* line 147, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li .im-overlay img {
+  margin: 0px 0px 0px 0px;
+  width: auto;
+}
+/* line 152, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul li .im-text {
+  width: 89px;
+}
+/* line 156, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+fieldset.wide.image ul.col {
+  width: 40%;
+  float: left;
+  margin: 0px 5px 0.5em 0px;
+}
+
+/* line 165, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+#trash .undo a {
+  display: none;
+  font-size: 10px;
+}
+
+/* line 166, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+#trash li:hover .undo a {
+  display: block;
+  width: 50px;
+  color: #216D3C;
+  text-align: center;
+  margin-top: -6px;
+}
+
+/* line 167, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+#trash {
+  display: none;
+  margin-left: 18px;
+  background: url("/images/bin-icon.png") no-repeat scroll 13px 0 #faf9f8;
+}
+
+/* line 168, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+#trash p {
+  margin: 0px 0px 0px 50px;
+  line-height: 25px;
+}
+
+/* line 169, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+#trash ul {
+  background-image: none;
+  padding-top: 10px;
+  background-color: #E8E7E7;
+  margin: 20px 30px 30px 0px;
+  -moz-box-shadow: 2px 1px 2px rgba(7, 7, 7, 0.1) inset, 0px 1px 2px rgba(7, 7, 7, 0.1) inset;
+  float: left;
+  width: auto;
+}
+
+/* line 170, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+#trash ul li.ui-state-default img {
+  width: 50px;
+}
+
+/* line 171, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+#trash ul li.ui-state-default {
+  width: 56px;
+  height: 55px;
+  margin-bottom: 12px;
+}
+
+/* line 172, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+#trash ul li .im-overlay {
+  background: none;
+  width: 50px;
+  height: 60px;
+}
+
+/* line 175, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+.sortable .undo a {
+  display: none;
+}
+
+/* line 176, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+.sortable .undo a:hover {
+  text-decoration: underline;
+}
+
+/* line 177, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+.sortable .ui-state-highlight {
+  background: #FAF9F8;
+  border: 1px solid transparent;
+}
+
+/* line 179, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+.ui-sortable-helper {
+  opacity: 0.6;
+  top: 0px;
+}
+
+/* line 180, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+.ui-sortable-placeholder {
+  border: 1px solid blue;
+  visibility: hidden;
+}
+
+/*.ui-state-default {  position: relative; border:1px solid #e6e6e6; -moz-box-shadow: 0px 1px 2px #888; -webkit-box-shadow: 0px 1px 2px #888; box-shadow: 0px 1px 2px #888; height: 90px; width:100px; margin: 0px 14px 30px 0px;}*/
+/*.ui-state-default:hover .im-text a.right { display:block; height:15px; visibility:visible; }*/
+/*.ui-state-default .im-text a {color: #C4414D;visibility: hidden;}*/
+/* line 184, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+.im-text a:hover {
+  text-decoration: underline;
+}
+
+/* line 186, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_image_upload.scss */
+.drag-icon-hint {
+  margin-top: 5px;
+  position: relative;
+}
+
+/* --------- admin navigation --------------- */
+/* line 3, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav {
+  width: 181px;
+  display: block;
+}
+/* line 6, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav #identity {
+  background: url("/images/agent-logo-frame-bottom.png") bottom no-repeat;
+  margin: 22px 0 10px 15px;
+  padding: 0 0px 6px;
+  width: 150px;
+}
+/* line 12, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav #identity #logo {
+  background: url("/images/agent-logo-frame-top.png") top no-repeat;
+  padding-top: 9px;
+  margin-bottom: 4px!important;
+  width: 150px;
+  text-align: center;
+}
+/* line 15, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav #identity #logo img {
+  margin: 0px auto;
+  max-width: 130px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 24, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav #identity #logo a {
+  display: block;
+  margin: 0px auto;
+  max-width: 130px;
+  text-align: center;
+  text-decoration: underline;
+}
+/* line 33, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul {
+  clear: both;
+  margin-top: 5px;
+  overflow: hidden;
+  padding: 0 0 15px 12px;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 39, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li {
+  display: block;
+}
+/* line 42, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li span {
+  display: block;
+  border-bottom: 1px solid #eaeaea;
+  padding: 7px 0 4px;
+}
+/* line 47, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li a {
+  background-image: url("/images/left-nav-sprite.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 7px 6px;
+  color: #4e4c46;
+  display: block;
+  font-size: 14px;
+  padding: 0 0 0 45px;
+  text-shadow: 0 1px 1px white;
+  text-decoration: none;
+  line-height: 22px;
+}
+/* line 59, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li a:hover {
+  color: #4f4e4d;
+  opacity: 1;
+}
+/* line 64, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li.dashboard a {
+  background-position: 7px 6px;
+}
+/* line 67, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li.stocklist a {
+  background-position: 7px -61px;
+}
+/* line 70, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li.reports a {
+  background-position: 7px -130px;
+}
+/* line 73, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li.marketing a {
+  background-position: 7px -195px;
+}
+/* line 76, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li.social a {
+  background-position: 7px -262px;
+}
+/* line 79, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li.website a {
+  background-position: 7px -329px;
+}
+/* line 82, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li.myaccount a {
+  background-position: 7px -398px;
+}
+/* line 85, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li.yourprofile a {
+  background-position: 7px -398px;
+}
+/* line 88, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li.youraccount a {
+  background-position: 7px -469px;
+}
+/* line 93, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li:hover.dashboard a, #admin-nav ul li.active.dashboard a {
+  background-position: 7px -25px;
+}
+/* line 96, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li:hover.stocklist a, #admin-nav ul li.active.stocklist a {
+  background-position: 7px -94px;
+}
+/* line 99, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li:hover.reports a, #admin-nav ul li.active.reports a {
+  background-position: 7px -161px;
+}
+/* line 102, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li:hover.marketing a, #admin-nav ul li.active.marketing a {
+  background-position: 7px -226px;
+}
+/* line 105, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li:hover.social a, #admin-nav ul li.active.social a {
+  background-position: 7px -295px;
+}
+/* line 108, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li:hover.website a, #admin-nav ul li.active.website a {
+  background-position: 7px -361px;
+}
+/* line 111, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li:hover.myaccount a, #admin-nav ul li.active.myaccount a {
+  background-position: 7px -432px;
+}
+/* line 114, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li:hover.yourprofile a, #admin-nav ul li.active.yourprofile a {
+  background-position: 7px -432px;
+}
+/* line 117, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li:hover.youraccount a, #admin-nav ul li.active.youraccount a {
+  background-position: 7px -505px;
+}
+/* line 121, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li.active {
+  background: url("/images/active-nav-item-2.png") right top no-repeat;
+  margin-top: -2px;
+}
+/* line 124, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation_admin.scss */
+#admin-nav ul li.active span {
+  border-bottom: 1px solid transparent;
+}
+
+/* line 114, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#agent-banner {
+  height: 41px;
+  background: url("/images/client-area-bg-red.png") top;
+}
+/* line 64, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#agent-banner .logo {
+  float: left;
+  padding: 1px 8px;
+}
+/* line 68, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#agent-banner div#client-controls {
+  border-bottom: 0px firebrick solid;
+  height: 33px;
+}
+/* line 71, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#agent-banner div#client-controls ul {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 7px;
+}
+/* line 76, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#agent-banner div#client-controls ul span {
+  color: #b7b7b7;
+  margin-left: 5px;
+}
+/* line 80, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#agent-banner div#client-controls ul li {
+  float: left;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  color: #e8cfc8;
+}
+/* line 84, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#agent-banner div#client-controls ul li.username {
+  padding: 0px 15px 0px 15px;
+  height: 20px;
+  color: #C2A29F;
+}
+/* line 89, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#agent-banner div#client-controls ul li.action-point {
+  padding: 0px 0px 0px 0px;
+  display: inline;
+  border-right: 1px solid #A63E3E;
+}
+/* line 93, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#agent-banner div#client-controls ul li.action-point a {
+  display: block;
+  font-weight: bold;
+  height: 20px;
+  margin-right: 4px;
+  padding: 0px 15px 0px 15px;
+  border-top: 0px;
+  font-size: 12px;
+  color: #E8CFC8;
+  text-decoration: none;
+}
+/* line 103, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#agent-banner div#client-controls ul li.action-point a:hover {
+  border-top: 0px;
+  text-decoration: underline;
+}
+
+/* line 119, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.my-agency a {
+  background: url("/images/arrow-dropdown.gif") no-repeat scroll right center #4b4b50;
+  border-color: #3B3939 #3B3939;
+  border-right: 1px solid #3B3939;
+  border-style: none solid solid;
+  border-width: 0 1px 1px;
+  color: #B7B7B7;
+  display: block;
+  font-size: 11px;
+  height: 20px;
+  margin-right: 4px;
+  padding: 5px 25px 0 15px;
+  text-decoration: none;
+}
+/* line 134, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.my-agency a:hover, .my-agency a.active {
+  background: url("/images/arrow-dropdown.gif") no-repeat scroll right center #343439;
+}
+/* line 138, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.my-agency #my-agency-menu-container {
+  position: absolute;
+  display: none;
+  width: 150px;
+  padding-bottom: 5px;
+  margin: 0;
+  background-image: url("/images/navigation/dropdown_corners.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  z-index: 10000;
+}
+/* line 148, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.my-agency #my-agency-menu-container #my-agency-container {
+  background-color: #343439;
+}
+/* line 151, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.my-agency #my-agency-menu-container ul {
+  width: 150px;
+  list-style: none;
+  background-image: url("/images/navigation/dropdown_gradient.jpg");
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+/* line 157, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.my-agency #my-agency-menu-container ul li {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-align: left;
+  padding: 1px;
+  list-style: none;
+  border-top: transparent solid 1px;
+  border-bottom: transparent solid 1px;
+  width: 130px;
+  font-size: 12px;
+}
+/* line 167, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.my-agency #my-agency-menu-container ul li:hover {
+  background-color: #3A3A3A;
+  border-color: #313131 #434343 #434343;
+  color: #E0E0E4;
+}
+/* line 174, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.my-agency #my-agency-menu-container a {
+  background: none repeat scroll 0 0 transparent;
+  border: 1px solid transparent;
+  color: #B7B7B7;
+  display: block;
+  font: 12px helvetica,arial,sans-serif;
+  height: auto;
+  margin-right: 0;
+  margin-top: 1px;
+  padding: 1px 0 0 5px;
+  text-decoration: none;
+}
+
+/* line 200, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.container-v2 {
+  margin: 0 auto;
+  overflow: hidden;
+  /*width: 950px */
+}
+
+/* line 206, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#client-area-v2 {
+  background: url("/images/client-area-bg.png") top;
+  height: 31px;
+  width: 100%;
+}
+
+/* line 211, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#logo-v2 {
+  height: 31px;
+  margin-left: 8px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+}
+/* line 147, /Users/siebert_lubbe/.rvm/gems/ree-1.8.7-2011.03@cp-auth/gems/compass-0.11.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #logo-v2 {
+  overflow-x: hidden;
+}
+
+/* line 216, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#client-nav-v2 {
+  height: 29px;
+  float: right;
+  /*+column(11) */
+}
+/* line 220, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#client-nav-v2 ul {
+  margin: 0px;
+  padding: 0px;
+  /*height: 31px */
+  color: #b7b7b7;
+}
+/* line 225, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#client-nav-v2 ul span {
+  color: #b7b7b7;
+  margin-left: 5px;
+}
+/* line 229, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#client-nav-v2 ul li {
+  float: left;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* line 236, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.username-v2 {
+  margin-top: 7px;
+  margin-right: 10px;
+  font: normal 11px helvetica, arial, sans-serif;
+  font-style: italic;
+}
+
+/* line 243, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.my-agency-v2 {
+  height: 31px;
+  padding: 0px 0px 0px 0px;
+  display: inline;
+}
+/* line 247, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.my-agency-v2 a {
+  /*width: 126px */
+  display: block;
+  height: 20px;
+  margin-right: 4px;
+  padding: 5px 25px 0px 15px;
+  font-size: 11px;
+  border: 1px solid #3b3939;
+  border-top: 0px;
+  color: #b7b7b7;
+  text-decoration: none;
+  background: #4b4b50 url("/images/arrow-dropdown-v2.gif") center right no-repeat;
+}
+/* line 259, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.my-agency-v2 a:hover {
+  background: #343439 url("/images/arrow-dropdown-v2.gif") center right no-repeat;
+  color: #e0e0e4;
+  border: 1px solid #58585c;
+  border-top: 0px;
+}
+/* line 265, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+.my-agency-v2 a.active {
+  background: #343439 url("/images/arrow-dropdown-v2.gif") center right no-repeat;
+  color: #e0e0e4;
+  border: 1px solid transparent;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+/* line 275, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#my-agency-menu-container-v2 {
+  background: url("/images/navigation/dropdown_corners-v2.png") no-repeat;
+  background-position: center bottom;
+  padding-bottom: 9px;
+  position: absolute;
+  width: 150px;
+  margin-left: 0px;
+  display: none;
+}
+/* line 283, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#my-agency-menu-container-v2 ul {
+  width: 150px;
+  background: #343439;
+  background-position: center bottom;
+}
+/* line 287, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#my-agency-menu-container-v2 ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  width: 100%;
+}
+/* line 290, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#my-agency-menu-container-v2 ul li a {
+  font: normal 12px helvetica, arial, sans-serif;
+  color: #b7b7b7;
+  background-image: none;
+  text-decoration: none;
+  margin-top: 3px;
+  border: 1px solid transparent;
+  margin-right: 0px;
+  height: auto;
+  background: none;
+  padding: 10px 0px 10px 15px;
+  display: block;
+}
+/* line 302, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#my-agency-menu-container-v2 ul li a:hover {
+  background-color: #3a3a3a;
+  border-color: #313131 #434343 #434343;
+  color: #e0e0e4;
+}
+
+/* line 312, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#main-nav-v2 {
+  background: url("/images/navigation/main-nav-bg.jpg") top repeat-x;
+  margin-bottom: 30px;
+}
+/* line 315, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#main-nav-v2 ul {
+  height: 55px;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 319, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#main-nav-v2 ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  float: left;
+  background: url("/images/navigation/navigation_separators5.jpg") right repeat-y;
+  border-right: 1px solid #dedede;
+}
+/* line 324, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#main-nav-v2 ul li a {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.97em;
+  padding: 25px 32px 0px 32px;
+  display: block;
+  text-decoration: none;
+  color: #535353;
+  height: 30px;
+  border-left: 1px solid #edeef0;
+  border-right: 1px solid #edeef0;
+  text-shadow: white 0 0px 1px;
+}
+/* line 335, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#main-nav-v2 ul li a:hover {
+  background: url("/images/navigation/navigation_active.jpg");
+  border-right: 1px solid #dedede;
+  border-left: 1px solid #edeef0;
+}
+/* line 343, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#main-nav-v2 ul li.active a {
+  border-left: 1px solid #dedede;
+  background: white;
+}
+/* line 348, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_navigation.scss */
+#main-nav-v2 ul li.first-item {
+  background: url("/images/navigation/navigation_separators.jpg") left repeat-y;
+}
+
+/* --------- progress tracker --------------- */
+/* line 10, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker {
+  margin: 9px 0px 18px 0px;
+  padding: 0px 0px 0px 0px;
+}
+/* line 13, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul {
+  list-style-image: none;
+  list-style-position: inside;
+  list-style-type: none;
+  margin: 0 auto;
+  overflow: hidden;
+  background: transparent url("/images/tracker-a-bg-normal.png") repeat-x scroll 0px 0px;
+  /*float: right;*/
+}
+/* line 21, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li {
+  float: left;
+  font-size: 14px;
+  width: 198px;
+  height: 36px;
+}
+/* line 27, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li a {
+  display: block;
+  padding: 9px 8px 8px 43px;
+  position: relative;
+  text-decoration: none;
+  color: #666666;
+  font-size: 14px;
+  overflow: visible;
+  z-index: 200;
+  cursor: default;
+  /*@include text-shadow($white, 0);*/
+}
+/* line 38, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li a span {
+  background: transparent url("/images/tracker-grey-arrow.png") no-repeat scroll 0px 0px;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 20px;
+  z-index: 100;
+  height: 36px;
+}
+/* line 46, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li a span.step-number {
+  position: relative;
+  right: 15px;
+  top: 0;
+  width: 16px;
+  height: 26px;
+  z-index: 100;
+  background: url("/images/progress-status-bg2.png") no-repeat scroll -1px 0px;
+  margin-right: 0px;
+  font-size: 10px;
+  color: #666666;
+  float: left;
+  margin-top: -3px;
+  padding-top: 4px;
+  padding-left: 10px;
+}
+/* line 62, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li a span.closer {
+  background: transparent url("/images/tracker-a-bg-closer.png") no-repeat top left;
+  float: left;
+  right: -18px;
+  /*padding-left: 9px;*/
+}
+/* line 70, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li a.selected {
+  font-weight: bold;
+  color: #fefefe;
+  text-shadow: #749a44 0 0px 1px;
+  background: transparent url("/images/tracker-a-bg-completed.png") repeat-x scroll 0px 0px;
+}
+/* line 75, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li a.selected span {
+  background: url("/images/tracker-green-arrow.png") no-repeat scroll 0px 0px;
+}
+/* line 77, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li a.selected span.step-number {
+  background: transparent url("/images/progress-status-bg2.png") no-repeat scroll 0px -33px;
+  text-shadow: none;
+}
+/* line 82, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li a.selected.closer {
+  float: left;
+  padding-left: 6px;
+}
+/* line 87, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li a.completed {
+  color: #fefefe;
+  font-weight: bold;
+  background: transparent url("/images/tracker-a-bg-completed.png") repeat-x scroll 0px 0px;
+  text-shadow: #749a44 0 0px 1px;
+}
+/* line 92, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li a.completed span {
+  background: url("/images/tracker-green-arrow.png") no-repeat scroll 0px 0px;
+}
+/* line 95, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li a.completed span.step-number {
+  background: url("/images/progress-status-bg2.png") no-repeat scroll -1px -67px;
+  color: #515151;
+  text-indent: -1000px;
+}
+/* line 102, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li:first-child {
+  background: transparent url("/images/tracker-a-bg-opener.png") no-repeat top left;
+}
+/* line 104, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker ul li:first-child a {
+  margin-left: 1px;
+}
+/* line 4, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_progress_tracker.scss */
+#progress-tracker.tabs-3 ul li {
+  width: 33.3%;
+}
+
+/* --------- sub tabbed navigation --------------- */
+/* line 3, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs {
+  overflow: auto;
+}
+/* line 6, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs ul {
+  background: url(/images/navtab-bottom.png);
+  height: 34px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 14, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs li {
+  float: left;
+}
+/* line 16, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs li a, .inner-tabs li span {
+  background: url(/images/navtab.png) no-repeat right top;
+  color: #777;
+  display: block;
+  font-weight: bold;
+  height: 17px;
+  padding: 8px 28px 8px 8px;
+  text-decoration: none;
+  font-size: 12px;
+}
+/* line 25, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs li a:hover, .inner-tabs li span:hover {
+  color: #333;
+}
+/* line 30, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs span {
+  color: #333;
+}
+/* line 34, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs li.current {
+  background: url(/images/navtab-current-left.png) no-repeat;
+  margin-left: -15px;
+  padding-left: 15px;
+}
+/* line 39, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs li.current span, .inner-tabs li.current a {
+  background: url(/images/navtab-current.png) no-repeat right top;
+  color: #333;
+}
+/* line 45, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs li:first-child {
+  background: url(/images/navtab-first.png) no-repeat;
+  padding-left: 16px;
+}
+/* line 49, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs li:first-child.current {
+  background: url(/images/navtab-current-first.png) no-repeat;
+  padding-left: 16px;
+  margin-left: 0;
+}
+/* line 54, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs li:last-child a {
+  background: url(/images/navtab-last.png) no-repeat right top;
+  padding: 8px 32px 8px 4px;
+}
+/* line 59, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs .last-inner-tab a {
+  background: url(/images/navtab-last.png) no-repeat right top;
+  padding: 8px 32px 8px 4px;
+}
+/* line 63, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs li:last-child.current span, .inner-tabs li:last-child.current a {
+  background: url(/images/navtab-current-last.png) no-repeat right top;
+}
+/* line 66, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.inner-tabs .last-inner-tab.current span {
+  background: url(/images/navtab-current-last.png) no-repeat right top;
+}
+
+/* --------- tabbed navigation --------------- */
+/* line 74, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs {
+  position: absolute;
+  bottom: 0;
+  width: 796px;
+}
+/* line 78, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+/* line 82, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs ul li {
+  text-align: center;
+  margin: 0 5px;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: inline;
+}
+/* line 87, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs ul li a {
+  font-weight: bold;
+  background-color: #f4f4f4;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  -webkit-border-radius: 4px 4px 0px 0px;
+  -moz-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
+  text-align: center;
+  color: #2d7eb3;
+  width: 110px;
+  line-height: 33px;
+  display: inline-block;
+  padding: 0px 6px;
+  text-shadow: white 0 0px 1px;
+}
+/* line 103, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs ul li a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  color: #538dc2;
+  text-decoration: underline;
+}
+/* line 109, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs ul li a.active {
+  position: relative;
+  height: 33px;
+  color: #5f6263;
+  font-weight: bold;
+  background-color: white;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* line 118, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs ul li a.active:hover {
+  position: relative;
+  height: 33px;
+  text-decoration: none;
+  cursor: default;
+}
+/* line 124, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs ul li a.active span.tabs-pointer {
+  display: block;
+}
+/* line 128, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs ul li a.active-last {
+  border: 1px solid transparent;
+  position: relative;
+  height: 33px;
+}
+/* line 133, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs ul li a.last-tab:hover {
+  text-decoration: none;
+}
+/* line 137, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs ul li span.tabs-pointer {
+  display: none;
+  height: 10px;
+  top: 37px;
+  width: 18px;
+  z-index: 10;
+  position: absolute;
+  left: 42%;
+}
+/* line 145, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs ul li span.tabs-pointer .tab-content {
+  padding: 10px 15px 9px 15px;
+  background-color: white;
+  clear: both;
+}
+/* line 154, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs ul li.last {
+  margin-right: 0;
+}
+/* line 158, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.listings-tabs ul li:first-child {
+  float: left;
+}
+
+/* line 166, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.tab-container legend span {
+  width: 643px;
+}
+/* line 169, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.tab-container .form {
+  background: url("/images/form-box-bg-narrow2.gif");
+}
+/* line 172, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+.tab-container .msg {
+  width: 440px;
+}
+
+/* line 177, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_tabbed_navigation.scss */
+#variation {
+  background: url("/images/form-box-bg.gif");
+}
+
+/* ------  inspection times ----------- */
+/* line 3, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_inspection_times.scss */
+#inspections-add .button {
+  position: relative;
+  left: 42px;
+  bottom: 5px;
+  /*margin-left: 42px;*/
+  /*margin-top: -5px;*/
+}
+
+/* line 13, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_inspection_times.scss */
+#inspections span.date-selector {
+  float: left;
+}
+/* line 15, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_inspection_times.scss */
+#inspections span.date-selector .starttime, #inspections span.date-selector .endtime {
+  margin-top: 13px;
+}
+
+/* line 21, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_inspection_times.scss */
+.inspection-times {
+  width: 745px;
+  margin-bottom: 36px;
+}
+/* line 25, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_inspection_times.scss */
+.inspection-times table {
+  border-collapse: collapse;
+  width: 100%;
+}
+/* line 29, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_inspection_times.scss */
+.inspection-times table tr.odd {
+  background: #FAF9F8 none repeat scroll 0 0;
+}
+/* line 31, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_inspection_times.scss */
+.inspection-times table tr.odd td {
+  border-bottom: 1px solid #E0DDDB;
+  border-top: 1px solid #E0DDDB;
+}
+/* line 36, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_inspection_times.scss */
+.inspection-times table tr td {
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  border-collapse: collapse;
+  vertical-align: middle;
+}
+/* line 43, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_inspection_times.scss */
+.inspection-times table tr td:first-child {
+  padding-left: 25px;
+}
+/* line 46, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_inspection_times.scss */
+.inspection-times table tr td.delete-inspection {
+  font-size: 1em;
+  text-align: right;
+  padding-right: 40px;
+  padding-bottom: 10px;
+}
+
+/* line 57, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_inspection_times.scss */
+.marked {
+  background-image: none;
+  background-color: #efeff0;
+  padding: 2px 6px 2px 6px;
+  letter-spacing: -0.02em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* ----- pagination ----------- */
+/* line 133, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_pagination.scss */
+.pagination {
+  padding-top: 18px;
+}
+/* line 136, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_pagination.scss */
+.pagination .ellipse,
+.pagination .current {
+  display: inline-block;
+  height: 37px;
+}
+/* line 139, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_pagination.scss */
+.pagination .ellipse span,
+.pagination .current span {
+  display: block;
+  float: left;
+  padding: 10px 10px 0 10px;
+  height: 25px;
+}
+/* line 146, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_pagination.scss */
+.pagination .ellipse {
+  color: #999999;
+}
+/* line 148, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_pagination.scss */
+.pagination .ellipse span {
+  padding: 11px 2px 0 2px;
+}
+/* line 153, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_pagination.scss */
+.pagination .current span {
+  font-weight: bold;
+  line-height: 15px;
+}
+
+/* --------- stock listings --------------- */
+/* line 3, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li {
+  zoom: 1;
+  position: relative;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  padding: 16px 0px 20px 0px;
+  background: transparent url("/images/listing-div-bg.png") no-repeat scroll center bottom;
+}
+/* line 6, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+ul#stocklist-items li:before, ul#stocklist-items li:after {
+  display: table;
+  content: "";
+}
+/* line 10, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+ul#stocklist-items li:after {
+  clear: both;
+}
+/* line 9, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li .listing-id {
+  position: absolute;
+  top: 28px;
+  right: 10px;
+  font-size: 11px;
+  color: #777777;
+  float: right;
+}
+/* line 16, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li .listing-id .property_number {
+  padding-right: 5px;
+}
+/* line 20, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li .marked {
+  background: url("/images/purchased-tick.png") 9px center no-repeat;
+  background-color: #efede9;
+  padding: 1px 6px 1px 25px;
+  font-size: 11px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 27, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li a.status {
+  display: block;
+  position: absolute;
+  top: 54px;
+  right: 10px;
+  width: 80px;
+  padding: 2px 8px;
+  background: #efeff0 none no-repeat 80px center;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 11px;
+  color: #464747;
+  text-align: center;
+}
+/* line 39, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li a.status.invalid {
+  background: #ca535e;
+  color: white;
+}
+/* line 45, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.data img.main {
+  float: left;
+  margin-right: 18px;
+}
+/* line 49, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.data .editable {
+  color: #333333;
+  display: inline-block;
+  padding-right: 15px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+/* line 56, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.data a.title {
+  font-family: 'SansaConSoftProSemiBold', 'Helvetica Neue', helvetica, arial, clean, sans-serif;
+  color: #2d7eb3;
+  padding: 0px 15px 4px 0;
+  font-weight: normal;
+  display: inline-block;
+  background-position: right 12px;
+  font-size: 18px;
+  line-height: 36px;
+  white-space: nowrap;
+  max-width: 465px;
+}
+/* line 67, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.data a.title span {
+  max-width: 465px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+/* line 74, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.data a.price, ul#stocklist-items li div.data a.sold-price, ul#stocklist-items li div.data a.price-per-week {
+  color: #777777;
+  display: inline-block;
+  font-size: 14px;
+  padding-bottom: 2px;
+  background-position: right 3px;
+}
+/* line 81, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.data a.inspection, ul#stocklist-items li div.data a.sold-date, ul#stocklist-items li div.data a.leased-date, ul#stocklist-items li div.data a.available-date {
+  display: inline-block;
+  font-size: 12px;
+}
+/* line 86, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.data a.sold-date, ul#stocklist-items li div.data a.leased-date, ul#stocklist-items li div.data a.available-date {
+  color: #777777;
+}
+/* line 90, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.products {
+  top: 56px;
+  left: 445px;
+  position: absolute;
+}
+/* line 94, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.products .exp {
+  font-size: 11px;
+  margin-left: 5px;
+}
+/* line 99, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.links {
+  float: left;
+  margin: 0;
+  display: block;
+  vertical-align: middle;
+  line-height: 22px;
+  height: 7px;
+}
+/* line 106, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.links a {
+  font-size: 12px;
+  display: none;
+  padding-top: 0px;
+  padding-left: 15px;
+  vertical-align: middle;
+  background-color: transparent;
+}
+/* line 113, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.links a.published-listing {
+  background: transparent url("/images/view-listing-icon.png") no-repeat left 5px;
+}
+/* line 116, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.links a.activity-report {
+  background: transparent url("/images/view-reports-icon.png") no-repeat 3px 5px;
+}
+/* line 119, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.links a.upgrade-listing {
+  background: transparent url("/images/upgrade-listing-icon.png") no-repeat 3px 5px;
+}
+/* line 123, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li div.links.links-variation {
+  clear: both;
+  margin-left: 127px;
+}
+/* line 128, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li .photo-wrap {
+  position: relative;
+  display: block;
+  left: 2px;
+}
+/* line 133, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li .photo-wrap .photo {
+  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 3px 0 0 3px;
+  background-color: rgba(248, 248, 255, 0.9);
+  padding: 3px 15px 3px 6px;
+  font-size: 11px;
+  z-index: 10;
+}
+/* line 145, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li .photo-wrap img {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 3px;
+}
+/* line 151, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li:hover {
+  background-color: #ffffff;
+}
+/* line 153, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li:hover .editable {
+  color: #2d7eb3;
+  background-image: url("/images/edit-pen-icon.png");
+}
+/* line 158, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li:hover div.data a, ul#stocklist-items li:hover div.data a.price, ul#stocklist-items li:hover div.data a.inspection, ul#stocklist-items li:hover div.data a.title span {
+  color: #2d7eb3;
+}
+/* line 160, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li:hover div.data a:hover, ul#stocklist-items li:hover div.data a.price:hover, ul#stocklist-items li:hover div.data a.inspection:hover, ul#stocklist-items li:hover div.data a.title span:hover {
+  text-decoration: underline;
+}
+/* line 165, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li:hover .marked, ul#stocklist-items li:hover .status {
+  background-color: #d8e1e6;
+}
+/* line 168, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li:hover .status {
+  color: #2d7eb3;
+}
+/* line 170, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li:hover .status.invalid.editable {
+  background: #ca535e url("/images/edit-pen-icon-invalid.png") no-repeat 80px center;
+}
+/* line 175, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li:hover a.photo {
+  visibility: visible;
+}
+/* line 179, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li:hover .photo-wrap a.disabled {
+  visibility: hidden;
+}
+/* line 182, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+ul#stocklist-items li:hover div.links a {
+  display: inline-block;
+}
+
+/* ------------ add-stocklist ---------------------- */
+/* line 192, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing {
+  width: 400px;
+  float: right;
+  display: inline;
+  position: relative;
+  z-index: 1;
+}
+/* line 199, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .arrow {
+  background: transparent url(/images/search-btn2-alternate.png) no-repeat scroll right -82px;
+  color: white;
+  display: inline-block;
+  font-size: 0.94em;
+  height: 42px;
+  padding: 0 18px 0 0;
+  text-decoration: none;
+  float: right;
+}
+/* line 208, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .arrow span {
+  background: transparent url(/images/search-btn2-alternate.png) no-repeat scroll right top;
+  cursor: pointer;
+  float: left;
+  height: 25px;
+  padding: 12px 29px 0 0;
+  text-shadow: 0 1px 1px #5E5E5E;
+}
+/* line 216, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .arrow:hover {
+  background-position: right -123px;
+}
+/* line 218, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .arrow:hover span {
+  background-position: right -41px;
+}
+/* line 222, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .arrow.active {
+  background-position: right -206px;
+}
+/* line 224, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .arrow.active span {
+  background-position: right -164px;
+}
+/* line 230, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .dropdown {
+  display: none;
+}
+/* line 232, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .dropdown.active {
+  float: right;
+  z-index: 3000;
+  margin-top: 30px;
+  display: block;
+}
+/* line 237, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .dropdown.active ul {
+  position: absolute;
+  right: 4px;
+  background: white;
+  border: 1px solid #4996bc;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  z-index: 900;
+  padding: 7px 0px 7px 0px;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -o-border-bottom-left-radius: 8px;
+  -ms-border-bottom-left-radius: 8px;
+  -khtml-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -o-border-bottom-right-radius: 8px;
+  -ms-border-bottom-right-radius: 8px;
+  -khtml-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -moz-box-shadow: 1px 1px 5px #888;
+  -webkit-box-shadow: 3px 3px 5px #888;
+  box-shadow: 1px 1px 5px #888;
+  background: url("/images/filter-dropdown-bg.png") repeat-x scroll center bottom white;
+}
+/* line 250, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .dropdown.active ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 252, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .dropdown.active ul li a {
+  padding: 3px 30px 3px 30px;
+  font-weight: bold;
+  display: block;
+  text-shadow: white 0 0px 1px;
+  color: #5f5f5f;
+  font-size: 12px;
+}
+/* line 259, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .dropdown.active ul li a:hover {
+  text-decoration: none;
+  background: #EFEFF0;
+}
+/* line 269, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .selected {
+  background: transparent url(/images/search-btn2.png) no-repeat scroll left -82px;
+  color: white;
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  height: 42px;
+  padding: 0 0 0 18px;
+}
+/* line 277, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .selected:hover {
+  text-decoration: none;
+  background-position: left -123px;
+}
+/* line 280, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .selected:hover span {
+  background-position: right -41px;
+}
+/* line 284, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#add-listing .selected span {
+  background: transparent url(/images/search-btn2.png) no-repeat scroll right top;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-size: 14px;
+  height: 25px;
+  line-height: normal;
+  padding: 8px 10px 0 0;
+  text-shadow: 0 1px 1px #5E5E5E;
+}
+
+/* ------------ generic alternate button ---------------------- */
+/* line 301, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap {
+  position: relative;
+  float: left;
+}
+/* line 305, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .arrow {
+  background: transparent url(/images/search-btn2-alternate.png) no-repeat scroll right -82px;
+  color: white;
+  display: inline-block;
+  font-size: 0.94em;
+  height: 42px;
+  padding: 0 18px 0 0;
+  text-decoration: none;
+  float: right;
+}
+/* line 314, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .arrow span {
+  background: transparent url(/images/search-btn2-alternate.png) no-repeat scroll right top;
+  cursor: pointer;
+  float: left;
+  height: 25px;
+  padding: 12px 29px 0 0;
+  text-shadow: 0 1px 1px #5E5E5E;
+}
+/* line 322, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .arrow:hover {
+  background-position: right -123px;
+}
+/* line 324, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .arrow:hover span {
+  background-position: right -41px;
+}
+/* line 328, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .arrow.active {
+  background-position: right -206px;
+}
+/* line 330, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .arrow.active span {
+  background-position: right -164px;
+}
+/* line 336, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .dropdown {
+  display: none;
+}
+/* line 338, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .dropdown.active {
+  z-index: 3000;
+  margin-top: 30px;
+  display: block;
+}
+/* line 342, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .dropdown.active ul {
+  position: absolute;
+  right: 0px;
+  background: white;
+  border: 1px solid #4996bc;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  z-index: 900;
+  padding: 7px 0px 7px 0px;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -o-border-bottom-left-radius: 8px;
+  -ms-border-bottom-left-radius: 8px;
+  -khtml-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -o-border-bottom-right-radius: 8px;
+  -ms-border-bottom-right-radius: 8px;
+  -khtml-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -moz-box-shadow: 1px 1px 5px #888;
+  -webkit-box-shadow: 3px 3px 5px #888;
+  box-shadow: 1px 1px 5px #888;
+  margin-right: 4px;
+  background: url("/images/filter-dropdown-bg.png") repeat-x scroll center bottom white;
+}
+/* line 356, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .dropdown.active ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 358, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .dropdown.active ul li a {
+  padding: 3px 10px 3px 10px;
+  font-weight: bold;
+  display: block;
+  text-shadow: white 0 0px 1px;
+  color: #5f5f5f;
+  font-size: 12px;
+}
+/* line 365, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .dropdown.active ul li a:hover {
+  text-decoration: none;
+  background: #EFEFF0;
+}
+/* line 375, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .selected {
+  background: transparent url(/images/search-btn2.png) no-repeat scroll left -82px;
+  color: white;
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  height: 42px;
+  padding: 0 0 0 18px;
+}
+/* line 383, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .selected:hover {
+  text-decoration: none;
+  background-position: left -123px;
+}
+/* line 386, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .selected:hover span {
+  background-position: right -41px;
+}
+/* line 390, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listings_results.scss */
+#alternate-wrap .selected span {
+  background: transparent url(/images/search-btn2.png) no-repeat scroll right top;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-size: 14px;
+  height: 25px;
+  line-height: normal;
+  padding: 8px 10px 0 0;
+  text-shadow: 0 1px 1px #5E5E5E;
+}
+
+/* ---- LISTING PRODUCTS ---- */
+/*
+
+  This area still needs works and affects things like the _payment_confirmation.html template.
+  As well as other places where prices are listed. *groan*
+
+*/
+/* line 9, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+.products-table-wrapper {
+  background: #f7f7f7 url("/images/product-table-rounded-corners.png") left top no-repeat;
+  margin-bottom: 30px;
+  padding: 1px;
+}
+
+/* line 16, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table {
+  border-collapse: collapse;
+  border-bottom: 4px solid #f7f7f7;
+  margin-bottom: 0px;
+}
+/* line 21, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 27, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table .product-container a {
+  font-size: 12px;
+}
+/* line 32, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table tr {
+  background-color: #ffffff;
+}
+/* line 37, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table .current-upgrade {
+  background-color: #FFFCE8;
+}
+/* line 39, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table .current-upgrade .product-type {
+  border-left: 4px solid #92BB67;
+}
+/* line 47, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table thead th {
+  text-align: left;
+}
+/* line 51, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table thead tr {
+  border: none;
+  text-align: left;
+  background: none;
+}
+/* line 57, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table thead h4 {
+  margin: 0 0 0 15px;
+  -moz-text-shadow: 0px 2px 1px white;
+  -webkit-text-shadow: 0px 2px 1px white;
+  text-shadow: 0px 2px 1px white;
+  color: #999999;
+  line-height: 28px;
+}
+/* line 68, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table td {
+  border-bottom: 1px solid #efefef;
+}
+/* line 72, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table td.product-type {
+  padding-right: 28px;
+  padding-left: 15px;
+  border-left: 4px solid #f7f7f7;
+}
+/* line 76, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table td.product-type .listing-upgrade-product-description {
+  margin-right: 0px;
+}
+/* line 80, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table td.product-type .feature-credits {
+  color: #2d7eb3;
+}
+/* line 84, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table td.product-duration {
+  width: 120px;
+  vertical-align: top;
+  padding-top: 14px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+/* line 91, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table td.product-duration .date-last-sent {
+  font-size: 11px;
+  color: #111;
+}
+/* line 96, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table td.product-action {
+  width: 139px;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 0px;
+  padding-top: 12px;
+  vertical-align: top;
+  border-right: 4px solid #f7f7f7;
+}
+/* line 105, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table td.product-action .small-font {
+  font-size: 11px;
+}
+/* line 109, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table td.product-action .big-font {
+  font-size: 18px;
+  color: #454545;
+  font-family: 'SansaConSoftProSemiBold', 'Helvetica Neue', helvetica, arial, clean, sans-serif;
+}
+/* line 116, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table td p {
+  font-size: 13px;
+}
+/* line 122, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table .pay-per-listing.expired {
+  background-color: #f6e3e7;
+}
+/* line 124, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table .pay-per-listing.expired .price-products {
+  color: #c4414d;
+  font-size: 18px;
+  font-family: 'SansaConSoftProSemiBold', 'Helvetica Neue', helvetica, arial, clean, sans-serif;
+}
+/* line 128, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table .pay-per-listing.expired .price-products .expiry-date {
+  color: #c4414d;
+  font-size: 11px;
+  padding-top: 4px;
+  font-family: "Helvetica Neue", "Arial", "Clean", sans-serif;
+}
+/* line 135, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table .pay-per-listing.expired .product-type {
+  border-left: 4px solid #c4414d;
+}
+
+/* line 144, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table tr.premiere-property td.product-type {
+  padding-top: 13px;
+}
+/* line 147, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table tr.premiere-property td.product-duration {
+  padding-top: 29px;
+}
+/* line 150, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#listing-products table tr.premiere-property td.product-action {
+  padding-top: 21px;
+}
+
+/* line 155, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+.price-text {
+  font-family: 'SansaConSoftProSemiBold', 'Helvetica Neue', helvetica, arial, clean, sans-serif;
+  width: auto;
+  font-size: 27px;
+  margin: 0;
+  padding: 0 10px;
+  text-align: center;
+}
+/* line 162, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+.price-text span {
+  font-family: "Helvetica Neue", "Arial", "Clean", sans-serif;
+  font-size: 11px;
+  display: block;
+  margin-top: 5px;
+}
+
+/* line 169, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+.price-products {
+  width: auto;
+  font-size: 11px;
+  margin: 0;
+  padding: 0 10px;
+}
+/* line 174, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+.price-products span {
+  font-size: 18px;
+}
+/* line 176, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+.price-products span.price {
+  font-size: 20px;
+}
+
+/* line 181, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+.price-wrap {
+  margin: -22px 7px 0px 0px;
+}
+
+/* line 185, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#payment-confirmation {
+  padding: 0.5em 1.0em;
+}
+/* line 189, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#payment-confirmation div.price-and-duration {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 193, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#payment-confirmation div.price-and-duration div {
+  display: inline-block;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+/* line 200, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#payment-confirmation .amount {
+  font-size: larger;
+  font-weight: bold;
+}
+/* line 205, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#payment-confirmation .notes {
+  font-size: smaller;
+}
+/* line 209, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#payment-confirmation div {
+  text-align: left;
+}
+/* line 213, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#payment-confirmation p.product-description {
+  width: 300px;
+}
+/* line 217, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#payment-confirmation .box {
+  zoom: 1;
+  background: #e7f1f7 url("/images/sq-white.gif") top repeat-x;
+  background-color: #fef8d6;
+  border-color: #ffe478;
+  color: #454545;
+  padding: 9px 18px 18px 18px;
+}
+/* line 6, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+#payment-confirmation .box:before, #payment-confirmation .box:after {
+  display: table;
+  content: "";
+}
+/* line 10, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+#payment-confirmation .box:after {
+  clear: both;
+}
+
+/* line 224, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_products.scss */
+#headline-parent .jqEasyCounterMsg {
+  float: right;
+  padding-top: 8px;
+  padding-right: 130px;
+  width: auto !important;
+}
+
+/* line 1, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_details.scss */
+.available-today, .sold-today, .leased-today {
+  float: left;
+  margin-top: -4px;
+  display: block !important;
+}
+
+/* line 7, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_details.scss */
+#disposition-date-available, #disposition-sold-date, #disposition-leased-date {
+  float: left;
+}
+
+/* line 1, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_header.scss */
+.edit-listing {
+  /* --------- listing summary --------------- */
+}
+/* line 2, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_header.scss */
+.edit-listing #form-header {
+  height: 200px;
+  position: relative;
+  padding: 15px;
+  overflow: hidden;
+}
+/* line 8, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_header.scss */
+.edit-listing #form-header h1 {
+  margin-top: 0px;
+  padding: 5px 10px;
+  color: white;
+  background: url("/images/title-texture.png") repeat;
+}
+/* line 15, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_header.scss */
+.edit-listing #form-header #listing-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 826px;
+  margin-top: -125px;
+}
+/* line 26, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_header.scss */
+.edit-listing .listing-summary {
+  zoom: 1;
+  color: #777777;
+  margin-bottom: 18px;
+}
+/* line 6, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.edit-listing .listing-summary:before, .edit-listing .listing-summary:after {
+  display: table;
+  content: "";
+}
+/* line 10, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_layout.scss */
+.edit-listing .listing-summary:after {
+  clear: both;
+}
+/* line 31, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_header.scss */
+.edit-listing .listing-summary .listing-summary-text {
+  float: left;
+}
+/* line 35, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_header.scss */
+.edit-listing .listing-summary .listing-summary-url {
+  position: absolute;
+  right: 26px;
+  top: 34px;
+  color: white;
+}
+/* line 40, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_header.scss */
+.edit-listing .listing-summary .listing-summary-url a {
+  color: white;
+}
+/* line 46, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_header.scss */
+.edit-listing #container {
+  padding: 21px 0 0 0;
+}
+/* line 50, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_header.scss */
+.edit-listing #left-col {
+  margin-top: -6px;
+  margin-right: 0;
+}
+/* line 54, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_header.scss */
+.edit-listing #right-col {
+  width: 826px;
+  margin-top: 0;
+}
+/* line 59, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_header.scss */
+.edit-listing #form-container {
+  margin-left: 17px;
+  margin-right: 15px;
+}
+/* line 64, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_listing_header.scss */
+.edit-listing #campaign-details-right-panel {
+  margin-left: auto;
+}
+
+/* line 1, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_social.scss */
+.header-separation {
+  height: 8px;
+  margin: 5px 0px 5px 0px;
+  background: url(/images/separation-div-bg.png) top repeat-x;
+}
+
+/* line 7, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_social.scss */
+.social_icon {
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 140, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+.social_introduction li {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin: 0px 0px 5px 0px;
+}
+/* line 134, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+.social_introduction ul {
+  margin: 10px 0px 15px 10px;
+}
+/* line 16, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_social.scss */
+.social_introduction h2 {
+  font-size: 24px;
+}
+
+/* line 21, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_social.scss */
+.social_learn_more_button {
+  margin: 10px 20px 0 0;
+  display: inline-block;
+}
+
+/* line 26, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_social.scss */
+.social_platform {
+  margin-top: 30px;
+}
+
+/* line 30, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_social.scss */
+.social_platform_content {
+  padding: 8px;
+  background: #f7f7f7 url(/images/social/product-table-rounded-corners-social.png) top left no-repeat;
+  padding: 15px 10px 10px 20px;
+}
+
+/* line 36, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_social.scss */
+.tagline {
+  margin-bottom: 18px;
+  display: block;
+}
+
+/* line 140, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+#tailor-your-lists li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0px 0px 5px 0px;
+}
+/* line 134, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+#tailor-your-lists ul {
+  margin: 10px 0px 20px 10px;
+}
+/* line 45, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_social.scss */
+#tailor-your-lists a {
+  font-weight: bold;
+}
+
+/* line 50, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_social.scss */
+.social-landing-left-col {
+  width: 386px;
+  margin-right: 47px;
+  float: left;
+}
+
+/* line 56, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_social.scss */
+.social-landing-right-col {
+  width: 360px;
+  float: left;
+}
+/* line 140, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+.social-landing-right-col li {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin: 0px 0px 5px 0px;
+}
+/* line 134, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_typography.scss */
+.social-landing-right-col ul {
+  margin: 10px 0px 15px 10px;
+}
+/* line 62, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_social.scss */
+.social-landing-right-col p, .social-landing-right-col li {
+  color: #777777;
+}
+
+/* line 67, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_social.scss */
+.social .inner-tabs {
+  margin-bottom: 18px;
+}
+
+/* ----- Search Filters ----------- */
+/* line 3, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filters-container {
+  z-index: 300;
+  height: 50px;
+  position: absolute;
+  overflow: visible;
+}
+/* line 9, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filters-container .listings-filterblock {
+  z-index: 10;
+  position: relative;
+}
+/* line 14, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filters-container span {
+  color: #999999;
+  display: block;
+  font-size: 12px;
+  margin-left: 10px;
+}
+/* line 21, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filters-container a.tag {
+  display: block;
+  border-bottom: 1px solid transparent;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 0px 25px 0px 0px;
+  background: url(/images/arrow-listing-select.png) no-repeat scroll right center;
+  -webkit-text-shadow: #fff 1px 1px 1px;
+  -moz-text-shadow: #fff 1px 1px 1px;
+  text-shadow: #fff 1px 1px 1px;
+}
+/* line 34, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filters-container a.tag:hover {
+  text-decoration: none;
+  background: #fff7c0 url(/images/arrow-listing-select.png) no-repeat scroll right center;
+}
+/* line 39, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filters-container a.tag:visited, .listings-filters-container a.tag:focus, .listings-filters-container a.tag:active {
+  color: #5484b2 !important;
+}
+/* line 44, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filters-container ul {
+  display: none;
+}
+
+/* line 49, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filter {
+  float: left;
+  margin-right: 0px;
+  padding: 5px 2px 10px 2px;
+  border: 1px solid transparent;
+}
+
+/* line 57, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filter-active {
+  float: left;
+  margin-right: 0px;
+  background: white url(/images/filter-dropdown-bg.png) bottom repeat-x;
+  border: 1px solid #f5f5f5;
+  padding: 5px 2px 10px 2px;
+  -moz-box-shadow: 1px 1px 5px #888;
+  -webkit-box-shadow: 3px 3px 5px #888;
+  box-shadow: 1px 1px 5px #888;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 68, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filter-active a.tag {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 71, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filter-active ul {
+  display: block;
+  margin: 15px 0px 0px 0px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 76, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filter-active ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 79, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filter-active ul a {
+  padding: 3px 10px 3px 10px;
+  font-weight: bold;
+  text-shadow: white 0 0px 1px;
+  color: #5f5f5f;
+  font-size: 12px;
+  display: block;
+}
+/* line 87, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filter-active ul a:hover {
+  text-decoration: none;
+  background: #EFEFF0;
+}
+/* line 92, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+.listings-filter-active ul a:visited {
+  color: #5f5f5f;
+}
+
+/* line 99, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+#stocklist-search {
+  display: block;
+  margin-top: 50px;
+  background: url(/images/search-area-bg1.png) top center no-repeat;
+  clear: both;
+}
+/* line 104, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+#stocklist-search fieldset {
+  border: 0px solid transparent;
+  padding: 8px 0px 0px 0px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+/* line 109, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+#stocklist-search fieldset input {
+  -moz-border-radius-topleft: 25px;
+  -webkit-border-top-left-radius: 25px;
+  -o-border-top-left-radius: 25px;
+  -ms-border-top-left-radius: 25px;
+  -khtml-border-top-left-radius: 25px;
+  border-top-left-radius: 25px;
+  -moz-border-radius-bottomleft: 25px;
+  -webkit-border-bottom-left-radius: 25px;
+  -o-border-bottom-left-radius: 25px;
+  -ms-border-bottom-left-radius: 25px;
+  -khtml-border-bottom-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-left: 20px;
+  margin-top: 9px;
+  width: 250px;
+  color: grey;
+  float: left;
+  padding: 4px 5px 5px 10px;
+  height: 13px;
+  border: 1px solid #bbbbbb;
+}
+
+/* line 126, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+div.result-count {
+  float: right;
+  font-size: 11px;
+  padding: 11px 20px 12px 20px;
+  margin-right: 3px;
+}
+/* line 132, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_search_filters.scss */
+div.result-count img {
+  padding-right: 8px;
+  margin-top: 2px;
+  float: left;
+}
+
+/* --------------- Campaign Tab Layout --------------- */
+/* line 3, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#form-container {
+  margin-left: 17px;
+  margin-right: 15px;
+}
+
+/* line 8, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-content {
+  float: left;
+  width: 543px;
+}
+
+/* line 13, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-right-panel {
+  float: right;
+  width: 206px;
+  padding: 3px;
+}
+/* line 18, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-right-panel > div {
+  padding: 18px 5px 9px 5px;
+  margin-bottom: 18px;
+  background: url("/images/listings-div-bg_03.png") no-repeat top left;
+}
+/* line 25, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-right-panel > div.links a.history {
+  background: url("/images/history_icon.png") no-repeat left;
+}
+/* line 28, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-right-panel > div.links a.activity-report {
+  background: url("/images/activity-report-icon.png") no-repeat left;
+}
+/* line 31, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-right-panel > div.links a.expenses-report {
+  background: url("/images/expenses-report-icon.png") no-repeat left;
+}
+/* line 34, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-right-panel > div.links a.printable-brochure {
+  background: url("/images/printable_brochure_icon.png") no-repeat left;
+}
+/* line 37, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-right-panel > div.links a span {
+  margin-left: 15px;
+}
+/* line 43, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-right-panel a {
+  font-weight: normal;
+}
+/* line 49, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-right-panel #share-listing li {
+  list-style-type: none;
+}
+/* line 53, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-right-panel #share-listing #facebook {
+  color: #f00;
+  background: url("/images/social/sprite.png") no-repeat 0 0px;
+  display: block;
+  width: 60px;
+  height: 20px;
+}
+/* line 60, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-right-panel #share-listing #facebook.disabled {
+  background: url("/images/social/sprite.png") no-repeat 0 -20px;
+}
+/* line 64, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-right-panel #share-listing #twitter {
+  color: #0f0;
+  background: url("/images/social/sprite.png") no-repeat 0 -40px;
+  display: block;
+  width: 60px;
+  height: 25px;
+}
+/* line 71, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-details-right-panel #share-listing #twitter.disabled {
+  background: url("/images/social/sprite.png") no-repeat 0 -65px;
+}
+
+/* line 79, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-email-dialog {
+  overflow: auto;
+}
+/* line 82, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-email-dialog .busy-notice {
+  position: absolute;
+  top: 0;
+  width: 160px;
+  height: 18px;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -40px;
+  background-color: #FFF7C0;
+  padding: 18px 12px;
+  border: 1px #CCC solid;
+  color: #666;
+  font-size: 18px;
+  text-align: center;
+}
+/* line 96, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-email-dialog .busy-notice span {
+  background: url("/images/loading.gif") no-repeat left center;
+  padding-left: 20px;
+  display: inline-block;
+}
+/* line 103, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-email-dialog .info p {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+/* line 108, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-email-dialog p.error-msg {
+  margin: 9px 0 -27px 0;
+  color: #c4414d;
+  font-size: 0.85em;
+  position: relative;
+}
+/* line 115, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#campaign-email-dialog .msg {
+  width: auto;
+}
+
+/* line 121, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#payment-confirmation .info p {
+  margin-bottom: 0px;
+}
+
+/* line 127, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_campaign.scss */
+#email-addresses-container {
+  margin-top: 20px;
+}
+
+/* --------- Modal window - overwrites jquery ui's dialog window styles --------------- */
+/* line 3, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_modal_window.scss */
+body .ui-dialog {
+  position: fixed;
+  background-image: url("/images/bg-frame-modal-window.png");
+  padding: 8px;
+  -webkit-box-shadow: 0px 5px 80px #777777;
+  -moz-box-shadow: 0px 5px 80px #777777;
+}
+/* line 12, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_modal_window.scss */
+body div.ui-dialog-titlebar {
+  background-image: none;
+  width: 10px;
+  position: absolute;
+  right: 24px;
+  z-index: 10;
+  border: none;
+  background-color: white;
+  padding: 0px 0px 0px 0px;
+}
+/* line 22, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_modal_window.scss */
+body div.ui-dialog-titlebar span.ui-dialog-title {
+  margin: 0px;
+}
+/* line 27, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_modal_window.scss */
+body div.ui-dialog-titlebar a.ui-dialog-titlebar-close span.ui-icon-closethick {
+  background-image: url("/images/lightbox-close.png");
+  background-position: -11px -39px;
+}
+/* line 33, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_modal_window.scss */
+body div.ui-dialog-titlebar a.ui-state-hover {
+  border: 1px solid white;
+  background-color: transparent;
+  background: none;
+}
+/* line 37, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_modal_window.scss */
+body div.ui-dialog-titlebar a.ui-state-hover span.ui-icon-closethick {
+  background-position: -11px -7px;
+}
+/* line 43, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_modal_window.scss */
+body div#payment-confirmation-dialog {
+  clear: both;
+  padding-top: 0px;
+}
+/* line 50, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_modal_window.scss */
+body div.ui-widget-overlay {
+  background-color: #8b8b8b;
+  background: -webkit-radial-gradient(rgba(127, 127, 127, 0.5), rgba(127, 127, 127, 0.5) 35%, rgba(0, 0, 0, 0.8));
+  background: -moz-radial-gradient(rgba(127, 127, 127, 0.5), rgba(127, 127, 127, 0.5) 35%, rgba(0, 0, 0, 0.8));
+}
+
+/* line 3, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-banner-images .listing-image {
+  width: 505px;
+  height: 45px;
+  background-size: 505px 45px;
+}
+/* line 8, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-banner-images ul {
+  background: none;
+}
+/* line 10, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-banner-images ul li {
+  width: 515px;
+  height: 74px;
+}
+/* line 13, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-banner-images ul li .im-text {
+  width: 502px;
+}
+
+/* line 22, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-large-logo-image .listing-image {
+  width: 170px;
+  height: 32px;
+  background-size: 170px 32px;
+}
+/* line 27, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-large-logo-image ul {
+  background: none;
+}
+/* line 29, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-large-logo-image ul li {
+  width: 180px;
+  height: 60px;
+}
+/* line 32, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-large-logo-image ul li .im-text {
+  width: 168px;
+}
+
+/* line 41, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-medium-logo-image .listing-image {
+  width: 160px;
+  height: 30px;
+  background-size: 160px 30px;
+}
+/* line 46, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-medium-logo-image ul {
+  background: none;
+}
+/* line 48, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-medium-logo-image ul li {
+  width: 170px;
+  height: 58px;
+}
+/* line 51, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-medium-logo-image ul li .im-text {
+  width: 158px;
+}
+
+/* line 59, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-documents ul.documents {
+  float: none;
+  background: none;
+}
+/* line 62, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-documents ul.documents li.uploaded-image {
+  float: none;
+}
+/* line 67, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-documents .attachment-caption {
+  margin: -97px 0 0 129px;
+  float: left;
+}
+/* line 73, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-documents .qq-uploader .attachment-caption {
+  margin: -2px 0 0 129px;
+}
+/* line 76, /Volumes/WinXP/Programming/cp-auth/lib/assets/stylesheets/shared/_project_details.scss */
+fieldset#project-documents .qq-uploader .add-image {
+  margin-top: -31px;
+}
