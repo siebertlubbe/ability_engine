@@ -26,7 +26,7 @@ Or install it yourself as:
 ## Usage
 
 After you've installed ability_engine to your project you need
-to your rails appyou need to add the following line to
+to your rails app, you need to add the following line to
 config/routes.rb:
 
     mount AbilityEngine::Engine, :at => "ability_engine"
