@@ -4,8 +4,8 @@ require File.expand_path('../lib/ability_engine/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Siebert Lubbe"]
   gem.email         = ["siebert.lubbe@googlemail.com"]
-  gem.description   = %q{Exposes cancan current_ability as json through a rails engine controller}
-  gem.summary       = %q{Exposes cancan current_ability as json through a rails engine controller}
+  gem.description   = %q{Exposes CanCan's current_ability object as json through a rails engine controller}
+  gem.summary       = %q{Exposes CanCan's current_ability object as json through a rails engine controller}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
