@@ -9,6 +9,12 @@ object through a controller action as json:
 This is very handy when you need to expose the current_ability to,
 for example, a browser client.
 
+**Warning:** AbilityEngine will and an unauthenticated
+controller to your project by which the current_ability
+is exposed. If you consider the rules in your Ability
+class to be confidential then this will break your
+security model.
+
 ## Installation
 
 Add this line to your application's Gemfile:
