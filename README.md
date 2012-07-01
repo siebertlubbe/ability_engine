@@ -1,7 +1,7 @@
 # AbilityEngine
 
 AbilityEngine is a Ruby on Rails engine that provides the
-current_ability cancan (https://github.com/ryanb/cancan/)
+current_ability CanCan (https://github.com/ryanb/cancan/)
 object through a controller action as json:
 
     http://<your-server>/ability_engine/current_ability
@@ -27,9 +27,10 @@ Or install it yourself as:
 
 AbilityEngine expects a current_ability object to be available
 in your applications controller scope. This is provided by
-cancan's Ability class that defines all the abilities that
+CanCan's Ability class that defines all the abilities that
 a particular user might have. Refer to cancan's documentation
 for information on how to set this up.
+https://github.com/ryanb/cancan/wiki
 
 ## Usage
 
